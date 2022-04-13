@@ -60,7 +60,7 @@ h2.card-title {
 /* Handle */
 
  ::-webkit-scrollbar-thumb {
-    background: #dfc774;
+    background: white;
 }
 
 
@@ -70,13 +70,98 @@ h2.card-title {
     background: #555;
 }
 
-
+:root{
+    --font-family-monteserat--: 'Montserrat', sans-serif;
+}
 /* *********************** Common style ends *************************** */
 
+/*======================== header page style start ========================*/
+.navbar{
+    background-color: #002d45;
+}
+.navbar-brand img{
+    width: 40%  !important;
+}
+.nav-item a{
+    color: white;
+    font-family: var(--font-family-monteserat--);
+    font-size: 15px;
+}
+.sign_up{
+    border: none;
+    border-radius: 9px;
+    color: #02699C;
+    text-transform: capitalize;
+    font-family: var(--font-family-monteserat--);
+    padding: 2px 15px;
+    height: 34px;
+}
+.sticky_header{
+    position: sticky;
+    top: 0;
+}
+/* ========================header page style end ========================*/
 
-/* ======================== Home Page Style Starts ========================= */
 
-/* ======================== Home Page Style Ends ========================= */
+/* ======================== community Page Style Starts ========================= */
+.hero_section{
+    background-image: linear-gradient(190deg, #003550, #0035509e);
+    
+}
+.hub_community {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 130px;
+}
+.hub_community h3{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: var(--font-family-monteserat--);
+}
+.hub_community_detail P{
+    color: white;
+    font-family: var(--font-family-monteserat--);
+    font-size: 15px;
+}
+.hub_community_detail{
+    width: 84%;
+}
+.hub_seprate_image {
+    width: 34%;
+}
+.handsome_img{
+    margin-left: -70px;
+}
+.hub_seprate_image_girl{
+    width: 37%;
+    display: flex;
+    justify-content: end;
+    margin-top: -16px;
+}
+.hub_seprate_image_lens{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    margin-top: -86px;
+}
+.hubb_investment{
+    background-image: linear-gradient(160deg, #00293f, #00293fe0);
+    
+}
+.investment_hub{
+    width: 65%;
+    margin: 0 auto;
+}
+.investment_idea{
+    color: white;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: var(--font-family-monteserat--);
+}
+/* ======================== community  Page Style Ends ========================= */
 
 
 /* ========================== login__page styale starts ====================== */
