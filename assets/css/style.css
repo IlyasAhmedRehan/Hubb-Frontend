@@ -1,0 +1,2575 @@
+/* *********************** Common style starts *************************** */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.bg-img {
+    background-image: url('../images/black-bg-img.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.home__page {
+    background-image: url(../images/home-back.png);
+}
+
+.custom-btn {
+    background: #e9c889;
+    color: #000000;
+    font-family: 'DINPro-Bold', sans-serif;
+    outline: none;
+    border-radius: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 14px;
+    width: 160px;
+    font-size: 18px;
+    border: none;
+    /* "to left" / "to right" - affects initial color */
+    background: linear-gradient(to left, #e9c889 50%, #ffce70 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    box-shadow: 2px 4px 30px #daa920;
+}
+
+.custom-btn:hover {
+    background-position: left;
+}
+
+h2.card-title {
+    font-size: 2.5rem;
+}
+
+
+/* for scroll bar UI  */
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #3b3526;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #dfc774;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/* *********************** Common style ends *************************** */
+
+
+/* ======================== Home Page Style Starts ========================= */
+
+.top__nav__bar {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid rgba(96, 111, 140, 0.4);
+}
+
+
+/* top__nav__bar */
+
+.top__nav__bar .top__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+
+.mobile-menu-btn {
+    cursor: pointer;
+    display: block;
+}
+
+.top__nav__bar .account-btns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.top__nav__bar .account-btns>* {
+    margin: 0 16px;
+    display: flex;
+}
+
+.top__nav .account-btns .btn-download img {
+    max-height: 44px;
+    width: auto;
+    background: #dfc774;
+}
+
+.top__nav .account-btns .btn {
+    padding: 12px 24px;
+    white-space: nowrap;
+    background-color: rgba(216, 226, 237, 0.1);
+    border: 2px solid #fff;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    line-height: 1;
+    color: #fff;
+    transition: .3s linear;
+}
+
+.top__nav .account-btns .btn:hover {
+    background: #dfc774;
+    transition: .3s linear;
+}
+
+.top__nav .btn+.btn {
+    margin-left: 16px;
+}
+
+.top__nav .account-btns .btn-download img:hover {
+    background: #fff;
+}
+
+
+/* main slider starts */
+
+.main__slider__section .custom__container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.main__slider__section .slide {
+    min-width: 10px;
+    width: 50px;
+    height: 100%;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 50px;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 3px 3px 5px black;
+    opacity: .5;
+}
+
+.main__slider__section .active {
+    flex-grow: 1;
+    transition-duration: 1s;
+    opacity: 1;
+    padding: 0 10px;
+    border-radius: 25px;
+    padding-bottom: 10px
+}
+
+.main__slider__section .nonActive {
+    flex-grow: 0;
+    opacity: .5
+}
+
+.main__slider__section .slide:nth-of-type(1) {
+    background-image: url('https://img.wallpapersafari.com/desktop/1600/900/32/71/oOHv6p.jpg')
+}
+
+.main__slider__section .slide:nth-of-type(2) {
+    background-image: url('https://img.wallpapersafari.com/desktop/1920/1080/44/49/TVUIau.jpg')
+}
+
+.main__slider__section .slide:nth-of-type(3) {
+    background-image: url('https://img.wallpapersafari.com/desktop/1024/576/30/13/TsJyS3.jpg')
+}
+
+.main__slider__section .slide:nth-of-type(4) {
+    background-image: url('https://img.wallpapersafari.com/desktop/1600/900/55/55/HNXFkf.jpg')
+}
+
+.main__slider__section .slide:nth-of-type(5) {
+    background-image: url('https://img.wallpapersafari.com/desktop/1920/1080/48/13/Pm2qxl.jpg')
+}
+
+.main__slider__section .slide:nth-of-type(6) {
+    background-image: url('https://img.wallpapersafari.com/desktop/1600/900/32/55/CoBfMu.jpg')
+}
+
+@media screen and (max-width: 700px) {
+    .main__slider__section .slide {
+        width: 20px;
+    }
+    .main__slider__section .active {
+        border-radius: 25px
+    }
+}
+
+
+/* main slider ends  */
+
+
+/* games__cards__section starts  */
+
+
+/*Time to apply widths for accordian to work
+Width of image = 640px
+total images = 5
+so width of hovered image = 640px
+width of un-hovered image = 40px - you can set this to anything
+so total container width = 640 + 40*4 = 800px;
+default width = 800/5 = 160px;
+*/
+
+.games__cards__section .accordian {
+    width: 1105px;
+    height: 360px;
+    overflow: hidden;
+    margin: 50px 40px;
+    margin-bottom: 40px;
+    /* box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35); */
+}
+
+.games__cards__section .accordian li:first-child {
+    box-shadow: none;
+}
+
+
+/*A small hack to prevent flickering on some browsers*/
+
+.games__cards__section .accordian ul {
+    width: 1300px;
+    /*This will give ample space to the last item to move
+	instead of falling down/flickering during hovers.*/
+}
+
+.games__cards__section .accordian li {
+    position: relative;
+    display: block;
+    width: 220px;
+    float: left;
+    border-left: 1px solid #888;
+    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    /*Transitions to give animation effect*/
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    /*If you hover on the images now you should be able to 
+	see the basic accordian*/
+}
+
+
+/*Reduce with of un-hovered elements*/
+
+.games__cards__section .accordian ul:hover li {
+    width: 110px;
+}
+
+
+/*Lets apply hover effects now*/
+
+
+/*The LI hover style should override the UL hover style*/
+
+.games__cards__section .accordian ul li:hover {
+    width: 640px;
+}
+
+.games__cards__section .accordian li img {
+    display: block;
+}
+
+
+/*Image title styles*/
+
+.games__cards__section .image_title {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 700px;
+}
+
+.games__cards__section .image_title a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 16px;
+}
+
+
+/* cards slider 3 section  */
+
+.slide-container {
+    margin: auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.wrapper:focus {
+    outline: 0;
+}
+
+.clash-card {
+    background: #dfc774;
+    width: 420px;
+    display: inline-block;
+    margin: auto;
+    border-radius: 19px;
+    position: relative;
+    text-align: center;
+    box-shadow: -1px 15px 30px -12px #f7a213;
+    z-index: 9999;
+}
+
+.clash-card__image {
+    position: relative;
+    height: 300px;
+    margin-bottom: 35px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.clash-card__image--barbarian {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg");
+    background-size: cover;
+}
+
+.clash-card__image--barbarian img {
+    width: 500px;
+    position: absolute;
+    top: -65px;
+    left: -70px;
+}
+
+.clash-card__image--archer {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer-bg.jpg");
+    background-size: cover;
+}
+
+.clash-card__image--archer img {
+    width: 500px;
+    position: absolute;
+    top: -34px;
+    left: -37px;
+}
+
+.clash-card__image--giant {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant-bg.jpg");
+    background-size: cover;
+}
+
+.clash-card__image--giant img {
+    width: 440px;
+    position: absolute;
+    top: -40px;
+    left: -25px;
+}
+
+.clash-card__image--goblin {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin-bg.jpg");
+    background-size: cover;
+}
+
+.clash-card__image--goblin img {
+    width: 470px;
+    position: absolute;
+    top: -31px;
+    left: -37px;
+}
+
+.clash-card__image--wizard {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/wizard-bg.jpg");
+    background-size: cover;
+}
+
+.clash-card__image--wizard img {
+    width: 445px;
+    position: absolute;
+    top: -38px;
+    left: -10px;
+}
+
+.clash-card__level {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.clash-card__level--barbarian {
+    color: #EC9B3B;
+}
+
+.clash-card__level--archer {
+    color: #EE5487;
+}
+
+.clash-card__level--giant {
+    color: #F6901A;
+}
+
+.clash-card__level--goblin {
+    color: #82BB30;
+}
+
+.clash-card__level--wizard {
+    color: #4FACFF;
+}
+
+.clash-card__unit-name {
+    font-size: 26px;
+    color: black;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.clash-card__unit-description {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.clash-card__unit-stats--barbarian {
+    background: #f7a213;
+}
+
+.clash-card__unit-stats--barbarian .one-third {
+    border-right: 1px solid #BD7C2F;
+}
+
+.clash-card__unit-stats--archer {
+    background: #EE5487;
+}
+
+.clash-card__unit-stats--archer .one-third {
+    border-right: 1px solid #D04976;
+}
+
+.clash-card__unit-stats--giant {
+    background: #F6901A;
+}
+
+.clash-card__unit-stats--giant .one-third {
+    border-right: 1px solid #de7b09;
+}
+
+.clash-card__unit-stats--goblin {
+    background: #82BB30;
+}
+
+.clash-card__unit-stats--goblin .one-third {
+    border-right: 1px solid #71a32a;
+}
+
+.clash-card__unit-stats--wizard {
+    background: #4FACFF;
+}
+
+.clash-card__unit-stats--wizard .one-third {
+    border-right: 1px solid #309eff;
+}
+
+.clash-card__unit-stats {
+    color: white;
+    font-weight: 700;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+.clash-card__unit-stats .one-third {
+    width: 33%;
+    float: left;
+    padding: 20px 15px;
+}
+
+.clash-card__unit-stats sup {
+    position: absolute;
+    bottom: 4px;
+    font-size: 45%;
+    margin-left: 2px;
+}
+
+.clash-card__unit-stats .stat {
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.clash-card__unit-stats .stat-value {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.clash-card__unit-stats .no-border {
+    border-right: none;
+}
+
+.cards__slider3__section .clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.cards__slider3__section .slick-prev {
+    left: 150px;
+    z-index: 999;
+}
+
+.cards__slider3__section .slick-next {
+    right: 200px;
+    z-index: 999;
+}
+
+
+/* games_reviews strts  */
+
+.our_games_review {
+    padding-bottom: 40px;
+    padding-top: 15px;
+}
+
+.our_games_review .games_review_div {
+    border-left: 3px solid #3498db;
+    border-top: 1px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.09);
+    padding: 30px 30px 30px 30px;
+    margin: 0 10px 0 4px;
+    background: #0f1010;
+    width: 100%;
+}
+
+.our_games_review .games_review_div .pic {
+    width: 180px;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.09);
+}
+
+.our_games_review .games_review_div .pic img {
+    width: 100%;
+    height: auto;
+}
+
+.our_games_review .games_review_div .client_info {
+    float: left;
+    margin-right: 20px;
+    width: calc(22% - 1.875rem);
+}
+
+.our_games_review .games_review_div .description {
+    font-size: 13px;
+    color: #918686;
+    padding-top: 10px;
+    line-height: 20px;
+    margin: 0 0 3% 43%;
+}
+
+.our_games_review .games_review_div .title {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.our_games_review .games_review_div .post {
+    font-size: 12px;
+    display: block;
+}
+
+.our_games_review .owl-theme .owl-controls .owl-buttons .owl-prev,
+.our_games_review .owl-theme .owl-controls .owl-buttons .owl-next {
+    height: 96%;
+    line-height: 155px;
+    position: absolute;
+    right: -40px;
+    top: 0;
+}
+
+.our_games_review .owl-theme .owl-controls .owl-buttons .owl-prev {
+    right: -40px;
+}
+
+.our_games_review .owl-theme .owl-controls .owl-buttons .owl-next {
+    right: -80px;
+}
+
+.our_games_review .owl-theme .owl-controls .owl-buttons div {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #3498db;
+    border-radius: 1px;
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    border: 2px solid #d45113;
+    background: #fff;
+    opacity: 1;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls .owl-page:hover span {
+    background: #d45113;
+}
+
+@media only screen and (max-width: 992px) {
+    .our_games_review .games_review_div .description {
+        margin: 0 0 3% 44%;
+    }
+}
+
+@media only screen and (max-width:640px) {
+    .our_games_review .games_review_div .pic {
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 0 0 10px;
+    }
+    .our_games_review .games_review_div .client_info {
+        float: none;
+        width: 100%;
+        margin: 0 0 10px;
+    }
+    .our_games_review .owl-theme .owl-controls .owl-buttons .owl-prev,
+    .our_games_review .owl-theme .owl-controls .owl-buttons .owl-next {
+        position: inherit;
+        height: 30px;
+        line-height: 30px;
+    }
+    .our_games_review .games_review_div .description {
+        margin: 0;
+    }
+}
+
+
+/* games_reviews ends */
+
+
+/* testimonial_slider  starts  */
+
+.testimonial {
+    border-right: 4px solid #dfc774;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 30px 30px 130px;
+    margin: 0 15px 30px 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonial:before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: -17px;
+    border-top: 25px solid #dfc774;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    transform: rotate(45deg);
+}
+
+.testimonial:after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -17px;
+    border-top: 25px solid #dfc774;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    transform: rotate(135deg);
+}
+
+.testimonial .pic {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+}
+
+.testimonial .pic img {
+    width: 100%;
+    height: auto;
+}
+
+.testimonial .description {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #adadad;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+.testimonial .title {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #dfc774;
+    margin: 0;
+}
+
+.testimonial .post {
+    display: inline-block;
+    font-size: 17px;
+    color: #dfc774;
+    font-style: italic;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    border: 2px solid #2A3D7D;
+    background: #fff !important;
+    border-radius: 0 !important;
+    opacity: 1;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls .owl-page:hover span {
+    background: #dfc774 !important;
+    border-color: #dfc774;
+}
+
+@media only screen and (max-width: 767px) {
+    .testimonial {
+        padding: 20px;
+        text-align: center;
+    }
+    .testimonial .pic {
+        display: block;
+        position: static;
+        margin: 0 auto 15px;
+    }
+}
+
+
+/* testimonial_slider ends  */
+
+
+/* cards__design starts  */
+
+.cards__design img {
+    height: 180px;
+    width: 100%;
+}
+
+.cards__design .item {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.cards__design .item-card {
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: #41413e;
+    background-clip: border-box;
+    border: 1px solid rgb(114 98 52);
+    margin-bottom: 30px;
+}
+
+.cards__design .item-card-title {
+    font-size: 15px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.cards__design .item-card-title i {
+    font-size: 15px;
+    transition: 1s;
+    cursor: pointer;
+    color: #ffa710
+}
+
+.cards__design .card-title i:hover {
+    transform: scale(1.25) rotate(100deg);
+    color: #18d4ca;
+}
+
+.cards__design .card:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cards__design .card-text {
+    height: 80px;
+}
+
+.cards__design .card::before,
+.cards__design .card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform .3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: '';
+    pointer-game_card: none;
+}
+
+.cards__design .card::before {
+    transform-origin: left top;
+}
+
+.cards__design .card::after {
+    transform-origin: right bottom;
+}
+
+.cards__design .card:hover::before,
+.cards__design .card:hover::after,
+.cards__design .card:focus::before,
+.cards__design .card:focus::after {
+    transform: scale3d(1, 1, 1);
+}
+
+
+/* cards__design ends */
+
+
+/* cards__slider2 starts  */
+
+#cards__slider2 {
+    margin-top: 80px;
+}
+
+.post-slide {
+    background: #fff;
+    margin: 20px 15px 20px;
+    border-radius: 15px;
+    padding-top: 1px;
+    /* box-shadow: 0px 14px 22px -9px #bbcbd8; */
+}
+
+.post-slide .post-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 6px 8px 8px 8px;
+}
+
+.post-slide .post-img img {
+    width: 340px;
+    height: auto;
+    transform: scale(1, 1);
+    transition: transform 0.2s linear;
+}
+
+.post-slide:hover .post-img img {
+    transform: scale(1.1, 1.1);
+}
+
+.post-slide .over-layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background: linear-gradient(-45deg, rgba(6, 190, 244, 0.75) 0%, rgba(45, 112, 253, 0.6) 100%);
+    transition: all 0.50s linear;
+}
+
+.post-slide:hover .over-layer {
+    opacity: 1;
+    text-decoration: none;
+}
+
+.post-slide .over-layer i {
+    position: relative;
+    top: 45%;
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-size: 25px;
+}
+
+.post-slide .post-content {
+    background: #fff;
+    padding: 2px 20px 40px;
+    border-radius: 15px;
+}
+
+.post-slide .post-title a {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+
+.post-slide .post-title a:hover {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.post-slide .post-description {
+    line-height: 24px;
+    color: #808080;
+    margin-bottom: 25px;
+}
+
+.post-slide .post-date {
+    color: #a9a9a9;
+    font-size: 14px;
+}
+
+.post-slide .post-date i {
+    font-size: 20px;
+    margin-right: 8px;
+    color: #CFDACE;
+}
+
+.post-slide .read-more {
+    padding: 7px 20px;
+    float: right;
+    font-size: 12px;
+    background: #2196F3;
+    color: #ffffff;
+    box-shadow: 0px 10px 20px -10px #1376c5;
+    border-radius: 25px;
+    text-transform: uppercase;
+}
+
+.post-slide .read-more:hover {
+    background: #3498db;
+    text-decoration: none;
+    color: #fff;
+}
+
+#cards__slider2 .owl-controls .owl-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#cards__slider2 .owl-controls .owl-buttons .owl-prev {
+    background: #fff;
+    position: absolute;
+    top: -13%;
+    left: 15px;
+    padding: 0 18px 0 15px;
+    border-radius: 50px;
+    box-shadow: 3px 14px 25px -10px #92b4d0;
+    transition: background 0.5s ease 0s;
+}
+
+#cards__slider2 .owl-controls .owl-buttons .owl-next {
+    background: #fff;
+    position: absolute;
+    top: -13%;
+    right: 15px;
+    padding: 0 15px 0 18px;
+    border-radius: 50px;
+    box-shadow: -3px 14px 25px -10px #92b4d0;
+    transition: background 0.5s ease 0s;
+}
+
+#cards__slider2 .owl-controls .owl-buttons .owl-prev:after,
+#cards__slider2 .owl-controls .owl-buttons .owl-next:after {
+    content: "\f104";
+    font-family: FontAwesome;
+    color: #333;
+    font-size: 30px;
+}
+
+#cards__slider2 .owl-controls .owl-buttons .owl-next:after {
+    content: "\f105";
+}
+
+@media only screen and (max-width:1280px) {
+    .post-slide .post-content {
+        padding: 0px 15px 25px 15px;
+    }
+}
+
+
+/* cards__slider2 ends  */
+
+
+/* games__cards2 starts  */
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.color-black {
+    color: #1e1e1e;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.f-14 {
+    font-size: 14px;
+}
+
+.card-text:last-child {
+    margin-bottom: 0;
+}
+
+.card-text .row {
+    margin-bottom: 25px;
+}
+
+.game_card_tabs .game_cards {
+    -webkit-box-shadow: 0 16px 64px -16px rgb(46 55 77 / 10%);
+    box-shadow: 0 16px 64px -16px rgb(46 55 77 / 10%);
+    background-color: #fff;
+    -webkit-transition: background-color .24s cubic-bezier(.4, 0, .3, 1), -webkit-box-shadow .24s cubic-bezier(.4, 0, .3, 1);
+    transition: box-shadow .24s cubic-bezier(.4, 0, .3, 1), background-color .24s cubic-bezier(.4, 0, .3, 1), -webkit-box-shadow .24s cubic-bezier(.4, 0, .3, 1);
+    margin-bottom: 20px;
+    transition: .3s linear;
+}
+
+.game_card_tabs .game_cards:hover {
+    background: #dfc774;
+    transform: scale(1.03);
+    overflow: hidden;
+    transition: .3s linear;
+}
+
+.game_card_tabs a {
+    color: #1e1e1e;
+}
+
+.game_card_detail {
+    padding: 0 13px 46px;
+    max-height: 150px;
+    min-height: 130px;
+}
+
+.game_card_icons {
+    text-align: right;
+    position: relative;
+    top: -22px;
+    margin-bottom: -20px;
+}
+
+.game_card_detail .game_card_icons a,
+.game_card_detail-icons a {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: all .4s cubic-bezier(.4, 0, .3, 1);
+    transition: all .4s cubic-bezier(.4, 0, .3, 1);
+    border: 1px solid #eeedf2;
+    background: #fff;
+    margin-left: 10px;
+}
+
+.game_card_detail .game_card_icons a:hover,
+.game_card_detail-icons a:hover {
+    background: #dfc774;
+    color: #fff;
+    border-color: #dfc774;
+    box-shadow: 0 0 18px #0e0e0e;
+}
+
+.svg-inline--fa.fa-w-16 {
+    width: 1.5em;
+}
+
+.game_card-title h5 {
+    font-size: 1.125rem;
+}
+
+h5.title {
+    line-height: 1.5;
+}
+
+.opacity-6 {
+    opacity: .6;
+}
+
+
+/* games__cards2 ends  */
+
+
+/* ======================== Home Page Style Ends ========================= */
+
+
+/* ========================== login__page styale starts ====================== */
+
+
+/* .login__page .row {
+    margin: 0%;
+} */
+
+.login__page {
+    background-color: #000000;
+}
+
+.login__page .arc {
+    background: #201b0f;
+    border: 1px solid white;
+    width: 53rem;
+    height: 40rem;
+    border-radius: 50%;
+    margin-top: -260px;
+    margin-left: -26px;
+}
+
+.login__page .logo img {
+    box-shadow: 0px 4px 45px 5px #eac7159e;
+    border-radius: 50%;
+    z-index: 1;
+    width: 180px !important;
+    height: auto;
+}
+
+.login__page .form-control {
+    background: transparent;
+    border: 0;
+    margin-bottom: 20px
+}
+
+.login__page .logo {
+    margin-top: -160px;
+}
+
+.login__page .fantasy-boss {
+    border: 2px solid white;
+    padding: 30px 20px;
+    width: 50%;
+    border-radius: 35px;
+    margin-top: -13px;
+}
+
+.login__page .fantasy-boss .fantasy__boss__img {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login__page .fantasy-boss .fantasy__boss__img img {
+    width: 130px;
+}
+
+.login__page .fantasy-boss p {
+    color: white;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.login__page .fantasy-boss span {
+    color: #b3b3b3;
+    line-height: 1.5;
+    color: #fff;
+    display: inline-flex;
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.login__page .fantasy-input h4 {
+    color: white;
+    font-size: 35px;
+    font-weight: 800;
+    /* font-family: 'DINPro-Bold', sans-serif; */
+}
+
+.login__page .arc img {
+    margin-top: 280px;
+    width: 200px;
+    margin-left: 51px;
+}
+
+.login__page .fantasy-input a {
+    color: #05D1FF;
+    /* font-family: 'DINPro-Bold', sans-serif; */
+}
+
+.login__page .fantasy-input a:hover {
+    color: #e9c889;
+}
+
+.login__page .fantasy-input input {
+    width: 100%;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid #E4CD70;
+    outline: none;
+    padding: 10px;
+    color: white;
+}
+
+.login__page .input-form {
+    width: 60%;
+}
+
+.login__page .input-form label {
+    color: white;
+    font-size: 18px;
+    line-height: 0;
+    font-family: 'DINPro-Bold', sans-serif;
+}
+
+.like__boss__image__div img {
+    width: 110px;
+}
+
+
+/* verification section */
+
+.login__page .verificaion-input input {
+    border-bottom: 2px solid white;
+    background: transparent;
+    outline: none;
+    color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 17%;
+    margin: 0 6px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.login__page .verificaton-detail p {
+    color: white;
+    font-size: 27px;
+    line-height: 1.3;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.login__page .verification-width {
+    width: 72%;
+    margin-top: 40px;
+}
+
+.login__page .verificaion-input h6 {
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-weight: 400;
+    font-size: 27px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.login__page .code-recive a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 22px;
+    font-family: 'DINPro-Bold', sans-serif;
+}
+
+.right__side__small__logo img {
+    width: 70px;
+}
+
+
+/* ========================== login__page styale ends ====================== */
+
+
+/* ****************************** Home Page Style Starts ********************  */
+
+.fantasy-chose {
+    padding-top: 20px;
+    border: 3px solid white;
+    text-align: center;
+    background-color: #e1c974;
+    border-radius: 30px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 1px 6px 3px #e1c974;
+    width: 80%;
+    margin: -20px auto 0;
+}
+
+.fantasy-chose p {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #000303;
+    font-family: 'DINPro-Bold', sans-serif;
+}
+
+.home-logo img {
+    box-shadow: 0px 6px 90px 22px #e5cc48;
+    border-radius: 50%;
+}
+
+.fantasy__boss__topright__logo {
+    width: 210px;
+}
+
+.col__custom__width {
+    width: 78px;
+}
+
+.left__side__menu .nav__div {
+    background: #41413e;
+    min-height: 100vh;
+    height: 100%;
+    box-shadow: inset 1px 0px 6px 0px #daa920;
+}
+
+.left__side__menu .nav {
+    /* border: 1px solid #DAA920; */
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: transparent;
+}
+
+.left__side__menu .nav-link {
+    font-size: 12px;
+    padding: 10px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #e1c974 !important;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: space-around;
+    letter-spacing: -1px;
+    width: 100%;
+}
+
+.left__side__menu .nav-link img {
+    width: 24px;
+    margin-bottom: 6px;
+}
+
+.left__side__menu .nav-link:hover,
+.left__side__menu .nav-link.active {
+    background: #dfc774 !important;
+    border-radius: 0 !important;
+    color: #fff !important;
+}
+
+.green-fantasy {
+    background-color: #0d2521;
+}
+
+.merone-fantasy {
+    background: #270e0e;
+}
+
+.fantasy-cards {
+    width: 100%;
+    margin: 16px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 10px;
+    height: 210px;
+    cursor: pointer;
+}
+
+.home__page .fantasy-cards img {
+    width: 90%;
+}
+
+.home__page .btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -30px;
+}
+
+.home__page .btn-group button {
+    background: #e1c974;
+    min-width: 44%;
+    border-radius: 20px;
+    padding: 5px;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid white;
+    /* "to left" / "to right" - affects initial color */
+    background: linear-gradient(to left, #dfc774 50%, #0d2521 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
+
+.home__page .btn-group button:hover {
+    background-position: left;
+    color: white !important;
+}
+
+
+/* ****************************** Home Page Style End ***********************  */
+
+#v-pills-tab {
+    background: #000000;
+    min-height: 100vh;
+    height: 100%;
+    box-shadow: inset 2px 0px 7px 1px #daa920;
+    border: 1px solid #DAA920;
+}
+
+
+/* ****************************** Chat Page Style start ***********************  */
+
+.custom-dropdown {
+    width: 28%;
+    border: 1px solid white;
+    height: 100px;
+    margin-top: -10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    background-color: #404040 !important;
+    color: white;
+}
+
+.custom-dropdown:hover {
+    color: white;
+}
+
+.custom-dropdown span {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.custom-menu.show {
+    left: 460px !important;
+    min-width: 27%;
+}
+
+.border-bottom-yellow {
+    border-bottom: 3px solid #eabe50;
+    padding: 30px 0px;
+}
+
+.nav-pills .chat-tabs.active,
+.nav-pills .show>.chat-tabs {
+    color: #000000 !important;
+    background-color: #eabe50!important;
+}
+
+.chat-nav {
+    width: 15%;
+    margin: 0 5px;
+}
+
+.chat-tabs {
+    background: #3b3526 !important;
+    width: 100%;
+    color: white !important;
+    font-family: 'DINPro-Bold', sans-serif;
+    height: 60px;
+    font-size: 12px;
+    border-radius: 20px !important;
+    border: 1px solid white !important;
+    text-transform: uppercase;
+}
+
+.draft-room {
+    border: 3px solid #eabe50;
+    min-height: 400px;
+    margin: 0px 8px;
+    min-width: 48%;
+    border-radius: 15px;
+    padding: 10px;
+    background-image: linear-gradient(360deg, #211f1bde, #211f1ba1);
+}
+
+.draft-room-detail {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+}
+
+.draft-room-detail li {
+    list-style: none;
+    padding: 0px;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: 'DINPro-Bold', sans-serif;
+    width: 45%;
+}
+
+.draft-btn {
+    border: 1px solid white;
+    font-size: 13px;
+    width: 80% !important;
+}
+
+.invite-link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.invite-link li {
+    list-style: none;
+    list-style: none;
+    padding: 0px;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: 'DINPro-Bold', sans-serif;
+}
+
+.link-width {
+    width: 53%;
+}
+
+.copy-btn {
+    width: 40%;
+    text-align: end;
+}
+
+.out-of-ten {
+    text-align: end;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 8px;
+}
+
+.address-link {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.avtar-setup {
+    width: 36%;
+    height: 50px;
+    margin-top: 75px;
+}
+
+.avtar-para p {
+    font-size: 20px;
+    width: 55%;
+    line-height: 25px;
+}
+
+.avtar-detail p {
+    font-size: 20px;
+}
+
+.summary-draft {
+    padding: 0px;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: 'DINPro-Bold', sans-serif;
+}
+
+.summry-time li {
+    list-style: none;
+}
+
+.summry-time li i {
+    color: #f2c788;
+    font-size: 22px;
+    margin: 0 10px;
+}
+
+.summry-time li span {
+    font-size: 18px;
+}
+
+.play-off {
+    width: 66%;
+    text-align: center;
+    line-height: 21px;
+}
+
+.summry-time {
+    line-height: 50px;
+}
+
+.user-adress {
+    width: 54%;
+    line-height: 26px;
+    text-align: end;
+}
+
+.yards {
+    line-height: 30px;
+}
+
+.summary-draft small {
+    font-size: 13px;
+}
+
+.chat-nav-new {
+    width: 23%;
+    margin: 0px 4px;
+}
+
+.chat-nav-new button {
+    font-size: 14PX;
+    line-height: 14px;
+}
+
+.maim-chat-body {
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #000000;
+    min-height: 530px;
+    position: relative;
+}
+
+.chat-input {
+    position: absolute;
+    bottom: 10px;
+    min-width: 95%;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.maim-chat-body p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.gif {
+    background: #eabe50;
+    padding: 8px 9px;
+    border-radius: 50%;
+    color: black;
+    text-transform: uppercase;
+}
+
+.chat-input input {
+    width: 70%;
+    background: #2f2a1a;
+    outline: none;
+    border: 1px solid wheat;
+    padding: 7px 5px;
+    border-radius: 40px;
+    color: white;
+    padding-right: 40px;
+}
+
+.chat-input input::placeholder {
+    text-transform: capitalize;
+}
+
+.chat-input i {
+    font-size: 20px;
+    margin-left: 2px;
+}
+
+.circle {
+    color: #eabe50;
+}
+
+.smile {
+    position: absolute;
+    bottom: 25px;
+    right: 64px;
+}
+
+.setting button {
+    background-color: #eabe50 !important;
+    color: black !important;
+    font-size: 30px;
+}
+
+
+/* ****************************** Chat Page Style End ***********************  */
+
+
+/* ****************************** League Page Style start ***********************  */
+
+.set_up {
+    border: 1px solid white;
+    border: 1px solid white;
+    width: 20%;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.draft_result {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    color: #00EBFF;
+}
+
+.week_name {
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.player_detail {
+    border: 1px solid white;
+    border-radius: 35px;
+    background-color: #4c4c4c;
+    width: 47%;
+    height: 130px;
+}
+
+.progress-bar {
+    background-color: #eabe50 !important;
+}
+
+.pink_bar {
+    background-color: #EA436E !important;
+}
+
+.rotate_bar {
+    transform: rotate(180deg);
+}
+
+.progress {
+    height: 6px !important;
+}
+
+.player_name ul li {
+    list-style: none;
+    font-family: 'DINPro-Bold', sans-serif;
+    line-height: 30px;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.player_detail h5 {
+    margin-left: 6px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: 'DINPro-Bold', sans-serif;
+    font-size: 16px;
+}
+
+.player_detail small {
+    margin-left: 6px;
+    font-family: 'DINPro-Bold', sans-serif;
+}
+
+.vs {
+    background-color: #191f2d;
+    padding: 6px 11px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.league_main {
+    height: 500px;
+    overflow: auto;
+    padding: 10px;
+}
+
+.table_bg {
+    background: #e4cc72 !important;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+}
+
+.standing {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.standing_right {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.league_deatails td {
+    text-align: center;
+    font-weight: 600;
+    font-family: 'DINPro-Bold', sans-serif;
+}
+
+.score_points {
+    margin-top: -28px;
+    margin-right: -24px;
+}
+
+.score_number {
+    color: #12d05f;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.team_name {
+    text-transform: capitalize;
+    font-family: 'DINPro-Bold', sans-serif;
+}
+
+.score_points li i {
+    transform: rotate(180deg);
+    font-size: 20px;
+    color: #12d05f;
+}
+
+.league_standing {
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: #47433a;
+    height: 580px;
+    overflow: auto;
+}
+
+.red-icon {
+    transform: rotate(0deg) !important;
+}
+
+.yellow_text {
+    color: #ead907;
+}
+
+.league_transaction {
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: #112724;
+    height: 580px;
+    overflow: auto;
+}
+
+.transaction {
+    background: #e4cc72;
+    border-radius: 20px;
+    padding: 2px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+    font-family: 'DINPro-Bold', sans-serif;
+}
+
+.team_name span {
+    font-size: 8px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #AECAD8;
+}
+
+.transaction_team {
+    margin-top: -16px;
+    margin-left: 20px;
+}
+
+.team_price {
+    font-size: 13px;
+    font-weight: 400 !important;
+    font-family: sans-serif !important;
+    color: #AECAD8;
+}
+
+.add_icon i {
+    color: #e4cc72;
+    font-size: 20px;
+}
+
+.league_transaction a {
+    color: #06afbc;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/* ****************************** League  Page Style End ***********************  */
+/* ****************************** draft setting  Page Style start ***********************  */
+
+:root {
+    --din-pro-light--: 'DINPro-Light', sans-serif;
+}
+
+.setting_side_menu {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.personal_settings {
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: #1f1f1f;
+}
+
+.draft_setting_tabs.active {
+    background: #3b3526 !important;
+    border: 1px solid white !important;
+    border-radius: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.draft_setting_tabs {
+    color: #ffffff;
+    font-family: 'DINPro-Bold', sans-serif;
+    text-align: initial;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.draft_setting_tabs:hover {
+    color: #ede3e3 !important;
+}
+
+.options_select {
+    width: 80%;
+}
+
+.support_icon {
+    display: flex;
+    justify-content: end;
+    color: #796e44;
+    margin-bottom: -8px;
+    margin-right: 5px;
+}
+
+.option_btn_gropu {
+    margin-top: 22px;
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked),
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.checkbox-tools:checked+label {
+    background-color: #eabe50;
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
+    color: #000000 !important;
+}
+
+.checkbox-tools:checked+label,
+.checkbox-tools:not(:checked)+label {
+    position: relative;
+    display: inline-block;
+    padding: 6px;
+    width: 29%;
+    border: 1px solid;
+    line-height: 16px;
+    font-size: 14px;
+    font-family: var(--din-pro-light--);
+    font-weight: 500;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: white;
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked),
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.options_select_check {
+    width: 90%;
+}
+
+.question_icon {
+    margin-right: 34px;
+    margin-bottom: -14px;
+}
+
+.options_select_draft {
+    width: 50%;
+}
+
+.options_select_support {
+    width: 34%;
+}
+
+.cutom_para {
+    font-family: var(--din-pro-light--);
+    line-height: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.checkbox+.switchbox {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    height: 27px;
+    overflow: hidden;
+    position: relative;
+    width: 50px;
+}
+
+.checkbox+.switchbox:after {
+    background-color: #f50000;
+    border-radius: 20px;
+    content: ' ';
+    display: block;
+    height: 25px;
+    position: absolute;
+    right: 50%;
+    transition: all 0.1s linear;
+    width: 50%;
+}
+
+.checkbox:checked+.switchbox {
+    background-color: #ffffff;
+}
+
+.checkbox:checked+.switchbox:after {
+    right: 0%;
+}
+
+.options_select_player {
+    width: 70%;
+}
+
+.options_select_reverse {
+    width: 78%;
+}
+.for-checkbox-tools small{
+    font-size: 12px;
+}
+.small_font{
+    font-size: 13px;
+}
+.new_switch::after{
+    background-color: #43BF81 !important;
+}
+.options_select_undrafted{
+    width: 73%;
+}
+.sorting_icon{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -10px;
+    color: #796e44;
+}
+.border_left{
+    border-left: 1px solid #796e44;
+}
+.w-90{
+    width: 90%;
+}
+.randomize{
+    background: #eabe50;
+    border-radius: 20px;
+    padding: 5px;
+    border: 1px solid white;
+    font-family: var(--din-pro-light--);
+}
+.lis_style li{
+    list-style: none;
+    line-height: 30px;
+}
+.reset_draft i{
+    display: flex;
+    justify-content: end;
+    color: #796e44;
+}
+.reset_draft p{
+    color: #796e44;
+    font-weight: 600;
+}
+.refresh{
+    color: #796e44;
+    font-size: 20px;
+}
+/* ****************************** draft setting  Page Style End ***********************  */
+/* personal setting page start */
+
+.setting_shadow {
+    box-shadow: inset 0px 19px 27px -13px #eabe50;
+    background-color: #1f1f1f;
+}
+
+.personal_image button {
+    background: #eabe50;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    font-size: 19px;
+    width: 73%;
+    line-height: 18px;
+    font-family: var(--din-pro-light--);
+    font-weight: 600;
+}
+
+.name_personl {
+    font-size: 24px;
+    font-family: var(--din-pro-light--);
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 5px;
+}
+
+.personal_info_input label {
+    font-size: 16px;
+    font-weight: var(--din-pro-light--);
+    text-transform: capitalize;
+    text-align: end;
+    width: 100%;
+    font-weight: 600;
+}
+
+.personal_info_input input {
+    background-image: linear-gradient(45deg, #343434db, #000000eb);
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 20px;
+    width: 60%;
+    outline: none;
+}
+
+.personal_info_input input::placeholder {
+    color: white;
+    text-align: center;
+}
+
+.notification_text {
+    font-size: 16px;
+    text-align: end;
+    font-weight: 600;
+    font-family: var(--din-pro-light--);
+}
+
+.button_input {
+    background: #eabe50 !important;
+}
+
+.button_input::placeholder {
+    color: black !important;
+    font-weight: 700;
+}
+
+.team_label label {
+    width: 100% !important;
+}
+
+.border_top {
+    border: 1px solid #eabe50;
+    width: 50%;
+    height: 2px;
+}
+
+
+/* personal page style end */
+
+
+/* commission tool start */
+
+.commission_tools_box {
+    border: 1px solid white;
+    border-radius: 12px;
+    background: #413c2d;
+    height: 150px;
+}
+
+.commission_tools_box h4 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.commission_tools_box p {
+    text-align: center;
+    line-height: 15px;
+    margin-top: 35px;
+}
+
+
+/* commission tool end */
+
+
+/* ****************************** my team Page Style start ***********************  */
+
+
+/* ****************************** my team  setting  Page Style End ***********************  */
+
+:root {
+    --dinpro-bold---: 'DINPro-Bold', sans-serif;
+}
+
+.avatar_manage {
+    width: 43% !important;
+    height: 45px;
+    box-shadow: 0px 3px 3px 1px #8b3f54;
+}
+
+.border_right {
+    border-right: 1px solid white;
+}
+
+.starter {
+    font-size: 21px;
+    font-weight: 500;
+    font-family: var(--din-pro-light--);
+}
+
+.Q_w {
+    background-color: #004B8B;
+    border: 1px solid #707070;
+    border-radius: 13px;
+    font-family: var(--dinpro-bold---);
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    margin-right: -17px;
+    z-index: 9999;
+}
+
+.Q_w p {
+    font-size: var(--din-pro-light--);
+}
+.wrs_bg{
+    background-image: linear-gradient(45deg, #25090987, transparent) !important;
+}
+.gren_bg{
+    background-image: linear-gradient(45deg, #009d8757, transparent) !important;
+}
+
+.green_qw{
+    background: #009d87;
+    margin-top: 59px;
+}
+.margin_top_20{
+    margin-top: -20px;
+}
+.starter_main {
+    background-image: linear-gradient(88deg, #0a1721, transparent);
+    border-radius: 20px;
+    border: 1px solid #707070;
+    width: 100%;
+    height: 69px;
+}
+
+.starter_para p {
+    font-size: 13px Im !important;
+    line-height: 17px;
+    font-size: var(--din-pro-light--);
+}
+
+.starter_para h6 {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 7px;
+    font-size: var(--din-pro-light--);
+}
+
+.starter_para span {
+    font-size: 13px !important;
+    font-size: var(--din-pro-light--);
+}
+.commision_tool_height{
+    height: 100vh;
+}
+/* ============================= Responsiveness starts ========================== */
+
+
+/* // Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
+
+
+/* // Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .arc {
+        width: 34rem;
+        margin-top: -345px;
+        margin-left: -16px;
+        height: 32rem;
+    }
+    .logo {
+        margin-top: -76px;
+    }
+    .fantasy-boss {
+        border: 2px solid white;
+        width: 70%;
+        margin-top: -24px;
+    }
+    .fantasy-boss h5 {
+        margin-top: 2px;
+        font-size: 18px;
+    }
+    .fantasy-boss p {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .fantasy-boss span {
+        font-size: 15px;
+    }
+    .verificaton-detail p {
+        font-size: 18px;
+        line-height: 27px;
+        margin-top: 4px;
+    }
+    .verificaion-input h6 {
+        font-size: 17px;
+    }
+    .code-recive a {
+        font-size: 14px;
+    }
+    .custom-btn {
+        padding: 7px;
+        width: 30%;
+        font-size: 16px;
+    }
+    .custom-btn {
+        padding: 6px;
+        font-size: 15px;
+        min-width: 50%;
+    }
+    .fantasy-input h4 {
+        font-size: 25px;
+    }
+    .input-form label {
+        font-size: 13px;
+    }
+}
+
+
+/* // Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar-collapse {
+        height: auto;
+        border-top: 0;
+        box-shadow: none;
+        max-height: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .navbar-collapse.collapse {
+        display: block !important;
+        width: auto !important;
+        padding-bottom: 0;
+        overflow: visible !important;
+    }
+    .navbar-collapse.in {
+        overflow-x: visible;
+    }
+    .navbar {
+        max-width: 300px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .navbar-nav,
+    .navbar-nav>li,
+    .navbar-left,
+    .navbar-right,
+    .navbar-header {
+        float: none !important;
+    }
+    .navbar-right .dropdown-menu {
+        left: 0;
+        right: auto;
+    }
+    .navbar-collapse .navbar-nav.navbar-right:last-child {
+        margin-right: 0;
+    }
+    .arc {
+        width: 26rem;
+        height: 32rem;
+    }
+    .logo {
+        margin-top: -61px;
+    }
+    .fantasy-boss {
+        width: 90%;
+        padding: 3px 10px;
+    }
+    .fantasy-boss h5 {
+        margin-top: 17px;
+        font-size: 17px;
+    }
+    .fantasy-boss p {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .fantasy-boss span {
+        line-height: 12px;
+        font-size: 15px;
+    }
+    .verificaton-detail p {
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 0px;
+    }
+    .verificaion-input h6 {
+        font-size: 16px;
+    }
+    .code-recive a {
+        font-size: 14px;
+    }
+    .custom-btn {
+        padding: 6px;
+        font-size: 15px;
+        min-width: 50%;
+    }
+    .span-logo {
+        width: 13% !important;
+    }
+    .fantasy-input h4 {
+        font-size: 21px;
+    }
+    .input-form label {
+        line-height: 45px;
+        font-size: 13px;
+    }
+    .fantasy-input input {
+        width: auto;
+    }
+}
+
+
+/* // span devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .arc {
+        width: 38rem;
+        height: 35rem;
+        margin-left: 1px;
+    }
+}
+
+
+/* // Extra span devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    .arc {
+        width: 100%;
+        height: 30rem;
+        margin-left: 6px;
+    }
+    .span-logo {
+        width: 13% !important;
+    }
+    .fantasy-boss {
+        border: 3px solid white;
+        padding: 4px 9px;
+        width: 80%;
+        border-radius: 10px;
+        margin-top: -16px;
+    }
+    .logo {
+        margin-top: -55px;
+    }
+    .fantasy-boss h5 {
+        font-size: 16px;
+    }
+    .fantasy-boss p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .fantasy-boss span {
+        font-size: 14px;
+    }
+    .verificaton-detail p {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .verificaion-input h6 {
+        font-size: 16px;
+    }
+    .code-recive a {
+        font-size: 14px;
+    }
+    .custom-btn {
+        padding: 6px;
+        min-width: 54%;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .fantasy-input h4 {
+        font-size: 20px;
+    }
+    .input-form label {
+        line-height: 40px;
+        font-size: 13px;
+    }
+}
+
+
+/* ============================= Responsiveness Ends ========================== */
