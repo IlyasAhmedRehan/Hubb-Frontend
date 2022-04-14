@@ -161,6 +161,167 @@ h2.card-title {
     font-weight: 500;
     font-family: var(--font-family-monteserat--);
 }
+.hub_trust_rank {
+    background-image: linear-gradient(178deg, #002d47, #015f8e);
+}
+
+.purpose_hub {
+    color: white;
+    font-family: var(--font-family-monteserat--);
+}
+
+.hub_para {
+    color: white;
+    font-family: var(--font-family-monteserat--);
+    width: 69%;
+}
+
+.hub_cards {
+    background-color: #00273D;
+    border-radius: 5px;
+}
+
+.cards_para {
+    font-size: 13px;
+}
+
+
+/* ======================== community  Page Style Ends ========================= */
+
+
+/* ======================== plateform feature  Page Style start ========================= */
+
+.plateform_feature {
+    background-image: linear-gradient(180deg, #003c5ce3, #003c5c);
+}
+
+.hub_plateform {
+    color: white;
+    font-family: var(--font-family-monteserat--);
+}
+
+.graph_image img {
+    border-radius: 12px;
+}
+
+.image_detail {
+    font-size: 12px !important;
+}
+
+.trusted_height {
+    padding-top: 50px;
+}
+
+.thousand_of_market {
+    background-image: linear-gradient(180deg, #02699c, #00273d);
+}
+
+.investment_access {
+    width: 50%;
+}
+
+.investment_access button {
+    width: 35% !important;
+}
+
+.margin_top_70 {
+    margin-top: -70px;
+}
+
+.investment_access {
+    padding-top: 100px;
+}
+
+.market_coverage button {
+    width: 43% !important;
+}
+
+.graph_text {
+    width: 70%;
+    font-size: 15px;
+}
+
+
+/* ======================== plateform feature  Page Style Ends ========================= */
+
+
+/* ======================== about us  Page Style start ========================= */
+
+.team_card {
+    background-image: linear-gradient(45deg, #efefef, #e3e3e3a3);
+    height: 170px;
+}
+
+.member_name li {
+    list-style: none;
+    color: white;
+    font-size: 11px;
+    font-family: var(--font-family-monteserat--);
+}
+
+.member_name {
+    padding-left: 1px;
+}
+
+.our_Beliefs {
+    background-image: linear-gradient(180deg, #00273d, #02699c);
+    height: 100vh;
+}
+
+
+/* ======================== about us feature  Page Style Ends ========================= */
+
+
+/* ========================== footer__page styale starts ====================== */
+
+.footer {
+    background-color: #00273D;
+    min-height: 200px;
+}
+
+.footer_detail {
+    color: white;
+    font-family: var(--font-family-monteserat--);
+}
+
+.footer_detail ul li {
+    color: white;
+    font-family: var(--font-family-monteserat--);
+    list-style: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    line-height: 27px;
+    transition: 0.4s;
+}
+
+.footer_detail ul li:hover {
+    color: #c9c1c1;
+}
+
+.footer_detail button {
+    background-color: ;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--font-family-monteserat--);
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 70%;
+    display: inline-block;
+    height: 35px;
+    /* "to left" / "to right" - affects initial color */
+    background: linear-gradient(to left, #f25a56 50%, #015a88 50%) right;
+    background-size: 200%;
+    transition: .6s ease-out;
+}
+
+.footer_detail button:hover {
+    background-position: left;
+}
+
+
+/* ========================== footer__page styale ends ====================== */
+
 /* ======================== community  Page Style Ends ========================= */
 
 
