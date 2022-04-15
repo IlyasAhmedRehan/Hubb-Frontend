@@ -267,9 +267,209 @@ h2.card-title {
     background-image: linear-gradient(180deg, #00273d, #02699c);
     height: 100vh;
 }
+.belief_sub_heading h5 {
+    font-family: var(--font-family-monteserat--);
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.belief_sub_heading h6 {
+    font-family: var(--font-family-monteserat--);
+    font-size: 12px;
+    font-weight: 500;
+    word-break: break-word;
+    width: 90%;
+}
+
+.belief_sub_heading p {
+    font-family: var(--font-family-monteserat--);
+    font-size: 12px;
+    margin-top: 11px;
+}
+
+.belief_sub_heading {
+    word-break: break-word;
+}
+
+section.our_purpose {
+    background-image: linear-gradient(180deg, #00273d, #02699c);
+    height: 100vh;
+}
+
+.mian_purpose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hub_purpose {
+    padding-top: 0px !important;
+}
+
+.hub_purpose p {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    width: 60%;
+    font-family: var(--font-family-monteserat--);
+    line-height: 24px;
+}
 
 
-/* ======================== about us feature  Page Style Ends ========================= */
+/* ======================== about us   Page Style Ends ========================= */
+
+
+/* ======================== Register Page Style start ========================= */
+
+.bg_image {
+    background-image: url(../image/main-bg.png), linear-gradient(180deg, #00273d, #02699c);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.hub_beta h3 {
+    text-align: inherit !important;
+    color: white;
+    font-size: 30px;
+    font-family: var(--font-family-monteserat--);
+}
+
+.hub_beta p {
+    color: white;
+    font-size: 16px;
+    font-family: var(--font-family-monteserat--);
+}
+
+.jon_us p {
+    color: #4fb5ef;
+    font-size: 26px;
+}
+
+.jon_us small {
+    color: white;
+    font-family: var(--font-family-monteserat--);
+}
+
+.register_input input {
+    margin: 4px 0px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 5px 5px;
+    font-family: var(--font-family-monteserat--);
+    width: 100%;
+}
+
+.register_input input::placeholder {
+    font-family: var(--font-family-monteserat--);
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+.button_input {
+    background-color: #f25a56;
+    color: white;
+    cursor: pointer;
+}
+
+.button_input::placeholder {
+    color: white;
+    text-align: center;
+}
+
+
+/* ======================== Register  Page Style Ends ========================= */
+
+
+/* ======================== login  Page Style start ========================= */
+
+.member_login {
+    background: #00283e;
+}
+
+.member_color h6 {
+    font-family: var(--font-family-monteserat--);
+    text-align: center;
+    color: #4cb0e9;
+    font-size: 34px;
+}
+
+.member_color p {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-family: var(--font-family-monteserat--);
+}
+
+.member_color {
+    padding-top: 30px !important;
+}
+
+.login_input input {
+    width: 50% !important;
+    margin: 6px 0px;
+}
+
+article {
+    width: 100%;
+    padding: 10px 0;
+    max-width: 337px;
+    margin: 0 auto;
+}
+
+.selectio_before {
+    display: flex;
+    align-items: center;
+}
+
+.selectio_before:before,
+.selectio_before:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #50B6F1;
+}
+
+.selectio_before:before {
+    margin: 0 20px 0 0;
+}
+
+.selectio_before:after {
+    margin: 0 0 0 20px;
+}
+
+.google_btn {
+    width: 50% !important;
+    margin: 6px 0px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 5px 5px;
+    font-family: var(--font-family-monteserat--);
+    background: #4385f3;
+    color: white;
+    font-size: 14px;
+}
+
+.facebok_btn {
+    background: #3b5799;
+    color: white;
+}
+
+.google_btn img {
+    max-width: 60% !important;
+}
+
+.facebok_btn i {
+    font-size: 20px;
+}
+
+
+/* ========================login  Page Style Ends ========================= */
+
 
 
 /* ========================== footer__page styale starts ====================== */
@@ -322,13 +522,7 @@ h2.card-title {
 
 /* ========================== footer__page styale ends ====================== */
 
-/* ======================== community  Page Style Ends ========================= */
 
-
-/* ========================== login__page styale starts ====================== */
-
-
-/* ========================== login__page styale ends ====================== */
 
 
 /* ============================= Responsiveness starts ========================== */
