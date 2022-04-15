@@ -470,7 +470,56 @@ article {
 
 /* ========================login  Page Style Ends ========================= */
 
-
+/* ========================classic software Page Style start ========================= */
+.software_info{
+    width: 31%;
+}
+.classic_cards{
+    background: white;
+    padding: 5px;
+    border-radius: 12px;
+    height: 700px;
+   
+}
+.classic_cards h5{
+    font-family: var(--font-family-monteserat--);
+    color: #006b9c;
+}
+.classic_cards p{
+    font-family: var(--font-family-monteserat--);
+    color: #6e6e6e;
+}
+.classic_cards small{
+    font-family: var(--font-family-monteserat--);
+    color: #6e6e6e;
+    font-size: 11px;
+}
+.learn_more{
+    background: #006b9c;
+    font-family: var(--font-family-monteserat--);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 3px;
+    min-width: 100%;
+}
+.btn_one{
+    margin-top: 140px !important;
+}
+.btn_two{
+    margin-top: 92px;
+}
+.btn_three{
+    margin-top: 44px;
+}
+.btn_four{
+    margin-top: -4px;
+}
+.classic_bg{
+    height: 100% !important;
+}
+/* ========================classic software  Page Style Ends ========================= */
 
 /* ========================== footer__page styale starts ====================== */
 
