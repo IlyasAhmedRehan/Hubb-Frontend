@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="306.834" viewBox="0 0 1920 306.834">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_232" data-name="Path 232" d="M0-392.752H1920V-699.586H0Z" transform="translate(0 699.586)" fill="none"/>
+    </clipPath>
+    <filter id="Path_231" x="-1030.971" y="-22.766" width="3347.169" height="337.555" filterUnits="userSpaceOnUse">
+      <feOffset dx="10" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_402" data-name="Group 402" clip-path="url(#clip-path)">
+    <g id="Group_401" data-name="Group 401" transform="translate(-1016.971 -8.766)">
+      <g transform="matrix(1, 0, 0, 1, 1016.97, 8.77)" filter="url(#Path_231)">
+        <path id="Path_231-2" data-name="Path 231" d="M1518.165,4.355l-187.7,56.511a61.69,61.69,0,0,1-17.7,2.548H762.307a61.726,61.726,0,0,1-17.7-2.547L555.951,4.074A350.791,350.791,0,0,0,455.37-10.4H-391.56c-24.371,0-44.13,13.585-44.13,30.345l-992.184,228.866c0,16.759,19.76,30.345,44.132,30.345h849.766a331.782,331.782,0,0,0,95.144-13.693L724.922,129.24c5.581-1.68,31.293-3.863,37.386-3.863H1312.76a61.74,61.74,0,0,1,17.7,2.547l211.991,63.823a180.339,180.339,0,0,0,51.721,7.445h232.989c24.373,0,44.133-13.585,44.133-30.345V19.944c0-16.759-19.76-30.345-44.133-30.345H1620.685a357.475,357.475,0,0,0-102.52,14.756" transform="translate(410.9 1.64)" fill="#02699c"/>
+      </g>
+    </g>
+  </g>
+</svg>

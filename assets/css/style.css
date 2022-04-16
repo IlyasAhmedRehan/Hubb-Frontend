@@ -1,4 +1,8 @@
 /* *********************** Common style starts *************************** */
+:root {
+    --font-family-monteserat--: 'Montserrat', sans-serif;
+}
+
 
 * {
     padding: 0;
@@ -10,7 +14,6 @@ body {
     max-width: 100%;
     overflow-x: hidden;
 }
-
 
 .custom-btn {
     background: #e9c889;
@@ -39,128 +42,188 @@ h2.card-title {
     font-size: 2.5rem;
 }
 
-
 /* for scroll bar UI  */
-
-
 /* width */
-
 ::-webkit-scrollbar {
     width: 8px;
 }
 
-
 /* Track */
-
- ::-webkit-scrollbar-track {
-    background: #3b3526;
+::-webkit-scrollbar-track {
+    background: #002b45;
 }
-
 
 /* Handle */
-
- ::-webkit-scrollbar-thumb {
-    background: white;
+::-webkit-scrollbar-thumb {
+    background: #fff;
 }
 
-
 /* Handle on hover */
-
- ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
 
-:root{
-    --font-family-monteserat--: 'Montserrat', sans-serif;
-}
-/* *********************** Common style ends *************************** */
 
+/* *********************** Common style ends *************************** */
 /*======================== header page style start ========================*/
-.navbar{
-    background-color: #002d45;
+.navbar {
+    background-color: #002b45d9;
 }
-.navbar-brand img{
-    width: 40%  !important;
-}
-.nav-item a{
+
+
+
+.nav-item a {
     color: white;
     font-family: var(--font-family-monteserat--);
     font-size: 15px;
 }
-.sign_up{
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-size: .7rem;
+    margin-right: 1.4rem;
+    margin-left: 1.4rem;
+    padding: 0;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    opacity: 0.76;
+    color: #ffffffe6;
+}
+
+.sign_up {
     border: none;
-    border-radius: 9px;
+    border-radius: 6px;
     color: #02699C;
     text-transform: capitalize;
     font-family: var(--font-family-monteserat--);
-    padding: 2px 15px;
-    height: 34px;
+    padding: 5px 8px;
+    font-size: .7rem;
+    font-weight: 500;
 }
-.sticky_header{
-    position: sticky;
+
+.sticky_header {
+    /* position: sticky;
+    top: 0; */
+    background-color: #002e4a;
+}
+
+.sticky_header.top_header .navbar{
+    background: url(../../assets/image/nav-bg.png);
+    background-size: cover;
+    height: 200px;
+    align-items: self-start;
+    padding-top: 28px;
+    top: -20px;
+    z-index: 1;
+}
+.sticky_header.top_header .navbar-brand img {
+    width: 100px !important;
+}
+/* top header  */
+
+.sticky_header.bottom_header {
+    position: fixed;
+    top: 10px;
+    width: 100%;
+    z-index: 0;
+    background-color: #002e4ade;
+}
+.sticky_header.bottom_header .navbar-brand img {
+    width: 40px !important;
+}
+.sticky_header.bottom_header.sticky {
     top: 0;
+    transition: .3s linear;
 }
+/* Bottom Header  */
+
+
 /* ========================header page style end ========================*/
-
-
 /* ======================== community Page Style Starts ========================= */
-.hero_section{
-    background-image: linear-gradient(190deg, #003550, #0035509e);
-    
+.hero_section {
+    background-image: linear-gradient(180deg, #002e49, #016596);
+    padding-bottom: 50px;
 }
+
 .hub_community {
     width: 50%;
     margin: 0 auto;
-    padding-top: 130px;
+    /* padding-top: 130px; */
 }
-.hub_community h3{
+
+.hub_community h3 {
     text-align: center;
     color: white;
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 42px;
+    font-weight: 500;
     font-family: var(--font-family-monteserat--);
+    line-height: 1;
 }
-.hub_community_detail P{
-    color: white;
+
+.hub_community_detail P {
+    color: #f2f4f8d1;
     font-family: var(--font-family-monteserat--);
-    font-size: 15px;
+    font-size: 13px;
 }
-.hub_community_detail{
-    width: 84%;
+
+.hub_community_detail {
+    width: 72%;
+    margin-left: auto;
+}
+
+.hub_community_detail.right_side{
+    margin-right: auto;
+    margin-left: unset;
 }
 .hub_seprate_image {
     width: 34%;
 }
-.handsome_img{
+
+.handsome_img {
     margin-left: -70px;
 }
-.hub_seprate_image_girl{
+
+.hub_seprate_image_girl {
     width: 37%;
     display: flex;
     justify-content: end;
     margin-top: -16px;
 }
-.hub_seprate_image_lens{
+
+.hub_seprate_image_lens {
     width: 50%;
     display: flex;
     justify-content: end;
     margin-top: -86px;
 }
-.hubb_investment{
+
+.hubb_investment {
     background-image: linear-gradient(160deg, #00293f, #00293fe0);
-    
+    /* padding-top: 120px; */
 }
-.investment_hub{
+
+.investment_hub {
     width: 65%;
     margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 100px;
 }
-.investment_idea{
+.investment_hub img{
+    width: 60px;
+}
+
+.investment_hub .trust_rank_icon{
+    width: 40px;
+}
+.investment_hub .hub_community_detail P{
+    padding-right: 30px;
+}
+.investment_idea {
     color: white;
     font-size: 18px;
     line-height: 20px;
     font-weight: 500;
     font-family: var(--font-family-monteserat--);
 }
+
 .hub_trust_rank {
     background-image: linear-gradient(178deg, #002d47, #015f8e);
 }
@@ -168,6 +231,10 @@ h2.card-title {
 .purpose_hub {
     color: white;
     font-family: var(--font-family-monteserat--);
+}
+.trust_rank_descp{
+    font-size: 13px;
+    padding-top: 12px;
 }
 
 .hub_para {
@@ -177,20 +244,25 @@ h2.card-title {
 }
 
 .hub_cards {
-    background-color: #00273D;
-    border-radius: 5px;
+    background-color: #002c44;
+    border-radius: 8px;
+    padding: 35px;
+    font-size: 13px;
+    width: 90%;
+    margin: 0 auto;
+}
+.hub_cards .hub_para {
+    font-size: 12px;
+    color: #c1c1c1;
+    width: 80%;
 }
 
 .cards_para {
     font-size: 13px;
 }
 
-
 /* ======================== community  Page Style Ends ========================= */
-
-
 /* ======================== plateform feature  Page Style start ========================= */
-
 .plateform_feature {
     background-image: linear-gradient(180deg, #003c5ce3, #003c5c);
 }
@@ -241,12 +313,8 @@ h2.card-title {
     font-size: 15px;
 }
 
-
 /* ======================== plateform feature  Page Style Ends ========================= */
-
-
 /* ======================== about us  Page Style start ========================= */
-
 .team_card {
     background-image: linear-gradient(45deg, #efefef, #e3e3e3a3);
     height: 170px;
@@ -522,92 +590,71 @@ article {
 /* ========================classic software  Page Style Ends ========================= */
 
 /* ========================== footer__page styale starts ====================== */
-
 .footer {
     background-color: #00273D;
     min-height: 200px;
 }
+ .footer_logo img{
+    width: 110px;
+}
 
 .footer_detail {
-    color: white;
+    color: #BCC1CB;
     font-family: var(--font-family-monteserat--);
+    font-size: 12px;
 }
 
 .footer_detail ul li {
-    color: white;
+    color: #BCC1CB;
     font-family: var(--font-family-monteserat--);
     list-style: none;
     text-transform: capitalize;
     cursor: pointer;
-    line-height: 27px;
+    line-height: 1.7;
     transition: 0.4s;
 }
 
 .footer_detail ul li:hover {
-    color: #c9c1c1;
+    color: #fff;
 }
 
 .footer_detail button {
-    background-color: ;
+    /* background-color: ; */
     border: none;
     border-radius: 5px;
     font-family: var(--font-family-monteserat--);
     outline: none;
     color: white;
-    font-size: 15px;
-    width: 70%;
+    font-size: 10px;
+    width: 65%;
     display: inline-block;
-    height: 35px;
+    height: 30px;
     /* "to left" / "to right" - affects initial color */
     background: linear-gradient(to left, #f25a56 50%, #015a88 50%) right;
     background-size: 200%;
     transition: .6s ease-out;
+    box-shadow: 10px 10px 40px #0D0E0F;
 }
 
 .footer_detail button:hover {
     background-position: left;
 }
 
-
 /* ========================== footer__page styale ends ====================== */
 
-
-
-
-/* ============================= Responsiveness starts ========================== */
-
-
-/* // Extra large devices (large desktops, 1200px and up) */
-
-@media (min-width: 1200px) {}
-
-
+/* ======================== community  Page Style Ends ========================= */
+/* ========================== login__page styale starts ====================== */
+/* ========================== login__page styale ends ====================== */
 /* // Large devices (desktops, 992px and up) */
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    
-}
-
+@media (min-width: 992px) and (max-width: 1199.98px) {}
 
 /* // Medium devices (tablets, 768px and up) */
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-   
-}
-
+@media (min-width: 768px) and (max-width: 991.98px) {}
 
 /* // span devices (landscape phones, 576px and up) */
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-   
-}
-
+@media (min-width: 576px) and (max-width: 767.98px) {}
 
 /* // Extra span devices (portrait phones, less than 576px) */
-
-@media (max-width: 575.98px) {
-   
-}
-
+@media (max-width: 575.98px) {}
 
 /* ============================= Responsiveness Ends ========================== */
