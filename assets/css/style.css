@@ -812,6 +812,55 @@ article {
 @media (min-width: 576px) and (max-width: 767.98px) {}
 
 /* // Extra span devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+
+    /* home page responsiveness start */
+    .hub_home{
+        text-align: center;
+    }
+    .mobile_access{
+        display: none;
+    }
+    .home_hero {
+        height: 100%;
+        padding-top: 50px !important;
+    }
+    .wrap{
+        width: 100%;
+      }
+      .mobile_access_width{
+          text-align: center;
+          margin-top: 50px;
+      }
+      .searchTerm {
+          height: 60px;
+      }
+      .searchButton{
+        height: 60px;
+      }
+      .search i{
+        top: 19px;
+      }
+      .wrap p {
+        font-size: 16px;
+    }
+    .home_hubb_icons {
+        width: 100%;
+        justify-content: center;
+    }
+    .home_icons {
+        width: 100%;
+    }
+    .home_icons img {
+        max-width: 10% !important;
+        margin: 5px;
+    }
+    .hub_home button {
+        font-size: 11px;
+        width: 60%;
+        height: 36px;
+    }
+ 
+}
 
 /* ============================= Responsiveness Ends ========================== */
