@@ -122,7 +122,7 @@ h2.card-title {
 
 .sticky_header.bottom_header {
     position: fixed;
-    top: 15px;
+    top: 24px;
     width: 100%;
     z-index: 0;
     background-color: #002e4ade;
@@ -815,9 +815,7 @@ article {
 @media (max-width: 575.98px) {
 
     /* home page responsiveness start */
-    .hub_home{
-        text-align: center;
-    }
+    
     .mobile_access{
         display: none;
     }
@@ -860,7 +858,125 @@ article {
         width: 60%;
         height: 36px;
     }
- 
+    .sticky_header.top_header .navbar {
+        display: none;
+    }
+    .navbar-toggler-icon i {
+        color: white;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none !important;
+    }
+    .mobile_hub {
+        width: 100% !important;
+    }
+    .mobile_hub_home {
+        text-align: center;
+    }
+    .mobile_hub h3 {
+        text-align: initial;
+        padding: 5px 19px;
+        font-size: 40px;
+        color: #50b6f1;
+    }
+    .mobile_hub p {
+        color: white;
+        font-family: var(--font-family-monteserat--);
+        width: 96%;
+        text-align: initial;
+        padding: 3px 14px;
+    }
+    .mobile_graph {
+        display: none;
+    }
+    .mobile_div {
+        text-align: center;
+    }
+    .mobile_flex {
+        flex-wrap: wrap;
+    }
+    .home_welcome_detail {
+        background: #00283d;
+        border-radius: 0px;
+        width: 100%;
+        margin: 35px 0px;
+        height: 520px;
+    }
+    .home_welcome_detail h6 {
+        text-align: initial;
+    }
+    .mobile_learn {
+        text-align: center;
+    }
+    .footer_detail {
+        margin-top: -13px;
+    }
+    .mobile_padding {
+        padding-left: 0px;
+    }
+    .mobile_margin_top {
+        margin-top: 0px !important;
+    }
+    .mobile_access_btn {
+        text-align: initial !important;
+        margin-top: 0px;
+    }
+    .footer_logo {
+        margin-left: 13px
+    }
+ .classic_software{
+    width: 39%;
+    padding: 0 30px;
+ }
+ .software_info {
+    width: 100%;
+    text-align: initial !important;
+    padding: 0 30px;
+    font-size: 15px;
+}
+.classic_cards {
+    height: 675px;
+    margin: 10px 0px;
+}
+.btn_three {
+    margin-top: 75px;
+}
+.btn_two {
+    margin-top: 106px;
+}
+.member_color {
+    padding-top: 100px !important;
+}
+.hub_community {
+    width: 100%;
+}
+.login_input input {
+    width: 80% !important;
+    margin: 6px 0px;
+    height: 45px;
+}
+article {
+    width: 80%;
+}
+.google_btn img {
+    max-width: 40% !important;
+}
+.google_btn{
+    width: 80% !important;
+    font-size: 12px;
+}
+.continue_google_btn{
+    width: 60%;
+}
+.google_body{
+    width: 29%;
+}
+.facebook_icons{
+    width: 20%;
+}
+.continue_facebook{
+    width: 80%;
+}
 }
 
 /* ============================= Responsiveness Ends ========================== */
