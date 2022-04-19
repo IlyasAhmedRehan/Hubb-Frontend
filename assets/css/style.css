@@ -977,6 +977,58 @@ article {
 .continue_facebook{
     width: 80%;
 }
+.hub_community h3 {
+    font-size: 35px;
+    text-align: initial;
+    margin: 6px 0px;
+}
+
+.hub_plateform {
+    text-align: initial !important;
+    font-size: 15px;
+}
+.mobile_about{
+    margin-top: 30px;
+}
+.team_card {
+    margin: 20px 0px;
+}
+.hub_mobile{
+    max-width: 40% !important;
+}
+.our_Beliefs {
+    padding: 3px 10px;
+    height: 100%;
+}
+.belief_sub_heading h5 {
+    font-size: 19px;
+}
+.hub_purpose p {
+    width: 80%;
+    font-size: 15px;
+    text-align: inherit;
+}
+.hub_purpose h3{
+    padding: 0 36px;
+    width: 70%;
+}
+.hub_seprate_image_lens{
+    display: none;
+}
+.hub_seprate_image{
+    display: none;
+}
+.mobile_paddings{
+    padding-top: 120px;
+}
+.hub_community_detail {
+    width: 100%;
+}
+.hub_seprate_image_girl {
+    display: none;
+}
+.trusted_image{
+    text-align: initial !important;
 }
 
 /* ============================= Responsiveness Ends ========================== */
