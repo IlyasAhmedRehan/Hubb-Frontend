@@ -978,9 +978,9 @@ article {
     width: 80%;
 }
 .hub_community h3 {
-    font-size: 35px;
+    font-size: 30px;
     text-align: initial;
-    margin: 6px 0px;
+    margin: -10px 0px;
 }
 
 .hub_plateform {
@@ -1030,5 +1030,59 @@ article {
 .trusted_image{
     text-align: initial !important;
 }
+.idea_invest{
+    text-align: initial !important;
+}
+.investment_idea {
+    font-size: 16px;
+}
+.hub_para {
+    width: 100%;
+    text-align: initial !important;
+}
+.trust_rank_descp {
+    text-align: initial !important;
+}
+.hub_cards {
+    border-radius: 0px;
+    width: 100%;
 
+}
+.hub_cards_user img{
+    padding: 10px 0px;
+}
+.hub_cards {
+    background-image: linear-gradient(45deg, #2893cdc7, transparent);
+}
+.hub_plateform_mobile{
+    width: 70%;
+    padding-top: 30px;
+    font-size: 27px;
+}
+.plateform_feature {
+    padding: 20px;
+}
+.d-sm-none{
+    display: none;
+}
+.graph_image img {
+    margin-top: 12px;
+}
+.mobille_width{
+    width: 100%;
+}
+.graph_text {
+    width: 100%;
+    text-align: initial !important;
+}
+.hub_mobile_padding{
+    padding: 5px 20px;
+    margin-top: 30px;
+}
+.investment_access button {
+    width: 80% !important;
+}
+.market_coverage button {
+    width: 80% !important;
+}
 /* ============================= Responsiveness Ends ========================== */
