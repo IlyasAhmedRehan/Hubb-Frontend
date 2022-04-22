@@ -448,7 +448,13 @@ section.our_purpose {
     color: white;
     text-align: center;
 }
-
+.bg_image_beta{
+         background-image: url(../image/main-bg.png), linear-gradient(180deg, #00273d, #02699c);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
 
 /* ======================== Register  Page Style Ends ========================= */
 
@@ -1084,5 +1090,33 @@ article {
 }
 .market_coverage button {
     width: 80% !important;
+}
+.bg_image_beta{
+    background-image:  linear-gradient(180deg, #00273d, #02699c);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+.mobile_graph_image{
+    display: none;
+}
+.hub_beta p {
+    font-size: 13px;
+    margin-top: 30px;
+}
+.jon_us p {
+    font-size: 30px !important;
+    margin-top: 40px !important;
+}
+.jon_us{
+    text-align: center;
+    margin-top: 150px;
+}
+.register_input{
+    margin-top: 20px;
+    text-align: center;
+}
+.register_input input {
+    width: 80%;
 }
 /* ============================= Responsiveness Ends ========================== */
