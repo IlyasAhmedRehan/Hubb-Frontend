@@ -1,0 +1,16 @@
+<svg id="Icon_-_Analytics" data-name="Icon - Analytics" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47.75" height="49.61" viewBox="0 0 47.75 49.61">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_70" data-name="Rectangle 70" width="47.75" height="49.61" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_322" data-name="Group 322" clip-path="url(#clip-path)">
+    <line id="Line_73" data-name="Line 73" y2="34.109" transform="translate(1.436 14.065)" fill="none" stroke="#50b6f1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <line id="Line_74" data-name="Line 74" y2="25.871" transform="translate(9.819 22.303)" fill="none" stroke="#50b6f1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <line id="Line_75" data-name="Line 75" y2="17.633" transform="translate(18.202 30.541)" fill="none" stroke="#50b6f1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <line id="Line_76" data-name="Line 76" y2="9.539" transform="translate(26.584 38.635)" fill="none" stroke="#50b6f1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_194" data-name="Path 194" d="M60.1,14.242A11.242,11.242,0,1,0,48.854,25.483,11.242,11.242,0,0,0,60.1,14.242Z" transform="translate(-19.604 -1.564)" fill="none" stroke="#50b6f1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <line id="Line_77" data-name="Line 77" x2="8.492" y2="8.492" transform="translate(37.822 21.251)" fill="none" stroke="#50b6f1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_195" data-name="Path 195" d="M54.609,24.146l2.3,2.3,4.649-5.307" transform="translate(-28.464 -11.019)" fill="none" stroke="#50b6f1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  </g>
+</svg>
