@@ -2,19 +2,18 @@
 :root {
     --font-family-monteserat--: 'Montserrat', sans-serif;
 }
-
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 body {
     max-width: 100%;
     overflow-x: hidden;
 }
-
+a{
+    text-decoration: none;
+}
 .custom-btn {
     background: #e9c889;
     color: #000000;
@@ -33,45 +32,43 @@ body {
     transition: .5s ease-out;
     box-shadow: 2px 4px 30px #daa920;
 }
-
 .custom-btn:hover {
     background-position: left;
 }
-
 h2.card-title {
     font-size: 2.5rem;
 }
-
+.color-light-gray {
+    color: #abb7c8 !important;
+}
+.padding-top-120px {
+    padding-top: 120px;
+}
 /* for scroll bar UI  */
 /* width */
 ::-webkit-scrollbar {
     width: 8px;
 }
-
 /* Track */
 ::-webkit-scrollbar-track {
     background: #002b45;
 }
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #fff;
 }
-
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
-
-
+.h3-title {
+    font-size: 34px !important;
+}
 /* *********************** Common style ends *************************** */
 /*======================== header page style start ========================*/
 .navbar {
     background-color: #002b45d9;
 }
-
-
-
 .nav-item a {
     color: white;
     font-family: var(--font-family-monteserat--);
@@ -83,11 +80,10 @@ h2.card-title {
     margin-left: 1.4rem;
     padding: 0;
 }
-.navbar-expand-lg .navbar-nav .nav-link:hover{
+.navbar-expand-lg .navbar-nav .nav-link:hover {
     opacity: 0.76;
     color: #ffffffe6;
 }
-
 .sign_up {
     border: none;
     border-radius: 6px;
@@ -99,17 +95,16 @@ h2.card-title {
     font-weight: 500;
 }
 button.sign_up:hover {
-    background: #0e7db4;
+    background: #f25a56;
     color: #fff;
+    box-shadow: 0 0 8px #202020;
 }
-
 .sticky_header {
     /* position: sticky;
     top: 0; */
     background-color: #002e4a;
 }
-
-.sticky_header.top_header .navbar{
+.sticky_header.top_header .navbar {
     background: url(../../assets/image/nav-bg.png);
     height: 200px;
     align-items: self-start;
@@ -124,14 +119,13 @@ button.sign_up:hover {
     margin-top: 10px;
 }
 /* top header  */
-
 .sticky_header.bottom_header {
     position: fixed;
     /* top: 24px; */
     width: 100%;
     z-index: 1;
     background-color: #002e4ade;
-    display:none;
+    display: none;
 }
 .sticky_header.bottom_header .navbar-brand img {
     width: 40px !important;
@@ -139,18 +133,15 @@ button.sign_up:hover {
 .sticky_header.bottom_header.sticky {
     top: 0;
     transition: .3s linear;
-    display:initial;
+    display: initial;
 }
 /* Bottom Header  */
-
-
 /* ========================header page style end ========================*/
 /* ======================== community Page Style Starts ========================= */
 .hero_section {
     background-image: linear-gradient(180deg, #002e49, #016596);
     padding-bottom: 50px;
 }
-
 .hub_community {
     width: 50%;
     margin: 0 auto;
@@ -158,13 +149,12 @@ button.sign_up:hover {
 }
 .home_purpose.hub_community {
     width: 100%;
-   text-align: center;
-} 
-
+    text-align: center;
+}
 .hub_community h3 {
     text-align: center;
     color: white;
-    font-size: 42px;
+    font-size: 40px;
     font-weight: 500;
     font-family: var(--font-family-monteserat--);
     line-height: 1;
@@ -175,72 +165,70 @@ button.sign_up:hover {
 .hub_community_detail P {
     color: #f2f4f8d1;
     font-family: var(--font-family-monteserat--);
-    font-size: 13px;
+    font-size: 12px;
 }
-
 .hub_community_detail {
     width: 72%;
     margin-left: auto;
 }
-
-.hub_community_detail.right_side{
+.hub_community_detail.right_side {
     margin-right: auto;
     margin-left: unset;
 }
-.hub_community .graph_image{
+.hub_community .graph_image {
     width: 68%;
+}
+#platformFeature_Page .hub_community .graph_image {
+    width: auto;
 }
 .hub_seprate_image {
     width: 34%;
 }
-
 .handsome_img {
     margin-left: -70px;
 }
-
 .hub_seprate_image_girl {
     width: 37%;
     display: flex;
     justify-content: end;
     margin-top: -16px;
 }
-
 .hub_seprate_image_lens {
     width: 50%;
     display: flex;
     justify-content: end;
     margin-top: -86px;
 }
-
-.hubb_investment {
+/* .hubb_investment {
     background-image: linear-gradient(160deg, #00293f, #00293fe0);
-    /* padding-top: 120px; */
-}
+} */
 .plat_form_feature {
     background-image: linear-gradient(194deg, #00273d, #01699D);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 160% 100%;
+    background-size: 160% 200%;
 }
 .plat_form_feature_content {
     width: 50%;
     margin: 0 auto;
 }
-
 .investment_hub {
     width: 65%;
     margin: 0 auto;
     padding-top: 120px;
     padding-bottom: 100px;
 }
-.investment_hub img{
+.hub_trust_rank .investment_hub,
+.hub_trust_rank .trust_rank_descp {
+    padding-bottom: 20px;
+}
+.investment_hub img {
     width: 60px;
 }
-
-.investment_hub .trust_rank_icon{
+.investment_hub .trust_rank_icon {
     width: 40px;
 }
-.investment_hub .hub_community_detail P{
+.investment_hub .hub_community_detail P {
     padding-right: 30px;
 }
 .investment_idea {
@@ -250,26 +238,22 @@ button.sign_up:hover {
     font-weight: 500;
     font-family: var(--font-family-monteserat--);
 }
-
-.hub_trust_rank {
+/* .hub_trust_rank {
     background-image: linear-gradient(178deg, #002d47, #015f8e);
-}
-
+} */
 .purpose_hub {
     color: white;
     font-family: var(--font-family-monteserat--);
 }
-.trust_rank_descp{
+.trust_rank_descp {
     font-size: 13px;
     padding-top: 12px;
 }
-
 .hub_para {
     color: white;
     font-family: var(--font-family-monteserat--);
     width: 69%;
 }
-
 .hub_cards {
     background-color: #002c44;
     border-radius: 8px;
@@ -283,125 +267,150 @@ button.sign_up:hover {
     color: #c1c1c1;
     width: 80%;
 }
-
 .cards_para {
     font-size: 13px;
 }
-
 /* ======================== community  Page Style Ends ========================= */
 /* ======================== plateform feature  Page Style start ========================= */
 .plateform_feature {
-    background-image: linear-gradient(180deg, #003c5ce3, #003c5c);
+    background-image: linear-gradient(183deg, #052f47bf, #003c5cc2);
 }
-
+#platformFeature_Page {
+    background-image: url(../image/home-bg.svg), linear-gradient(180deg, rgb(0 46 74) 29%, rgb(8 101 149) 51%, rgba(0, 46, 74, 1) 96%);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 160% 200%;
+    background-attachment: fixed;
+}
 .hub_plateform {
     color: white;
     font-family: var(--font-family-monteserat--);
+    margin-top: 15px;
+    font-size: 15px;
+    margin-bottom: 30px;
 }
-
 .graph_image img {
     border-radius: 12px;
 }
-
 .image_detail {
-    font-size: 12px !important;
+    font-size: 11px !important;
 }
-
 .trusted_height {
     padding-top: 50px;
 }
-
 .thousand_of_market {
-    background-image: linear-gradient(180deg, #02699c, #00273d);
+    background-image: linear-gradient(180deg, #02699c9c, #00273dc9);
 }
-
 .investment_access {
     width: 50%;
 }
-
 .investment_access button {
     width: 35% !important;
 }
-
 .margin_top_70 {
     margin-top: -70px;
 }
-
 .investment_access {
     padding-top: 100px;
 }
-
 .market_coverage button {
-    width: 43% !important;
+    min-width: 180px !important;
+    width: auto !important;
+    padding: 0 15px;
 }
-
 .graph_text {
     width: 70%;
     font-size: 15px;
 }
-
 /* ======================== plateform feature  Page Style Ends ========================= */
 /* ======================== about us  Page Style start ========================= */
 .team_card {
-    background-image: linear-gradient(45deg, #efefef, #e3e3e3a3);
+    /* background-image: linear-gradient(45deg, #efefef, #e3e3e3a3); */
     height: 170px;
+    background-color: #bcc1cb;
 }
-
+#about_us_page .plateform_feature,
+#communityPage .plateform_feature {
+    background-image: url(../image/home-bg.svg), linear-gradient(180deg, rgb(0 46 74) 29%, rgb(8 101 149) 51%, rgba(0, 46, 74, 1) 96%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 160% 200%;
+}
+#about_us_page .hub_community_detail P {
+    font-size: 12px;
+}
+.our-team {
+    padding-top: 160px;
+    padding-bottom: 140px;
+}
+#about_us_page .h3-title {
+    padding-bottom: 25px;
+}
 .member_name li {
     list-style: none;
     color: white;
     font-size: 11px;
     font-family: var(--font-family-monteserat--);
 }
-
+.member_name li a {
+    color: #fff;
+    text-decoration: none;
+}
+.member_name li a:hover {
+    opacity: .5;
+}
 .member_name {
     padding-left: 1px;
 }
-
+.member_color .forgot_password p{
+    font-size: 11px;
+}
 .our_Beliefs {
-    background-image: linear-gradient(180deg, #00273d, #02699c);
+    background-image: linear-gradient(180deg, #022234, #02699c);
     height: 100vh;
+    padding-top: 140px;
 }
 .belief_sub_heading h5 {
     font-family: var(--font-family-monteserat--);
     font-size: 16px;
     margin-top: 15px;
 }
-
 .belief_sub_heading h6 {
     font-family: var(--font-family-monteserat--);
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 500;
     word-break: break-word;
-    width: 90%;
+    width: 80%;
 }
-
 .belief_sub_heading p {
     font-family: var(--font-family-monteserat--);
-    font-size: 12px;
-    margin-top: 11px;
+    font-size: 10px;
+    margin-top: 15px;
+    width: 90%;
 }
-
 .belief_sub_heading {
     word-break: break-word;
 }
-
 section.our_purpose {
     background-image: linear-gradient(180deg, #00273d, #02699c);
     height: 100vh;
 }
-
+.our_purpose .mian_purpose p {
+    font-size: 16px;
+    line-height: 1.3;
+}
+.our_manifesto .hub_community.hub_purpose {
+    width: 53%;
+}
 .mian_purpose {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
-
 .hub_purpose {
     padding-top: 0px !important;
 }
-
 .hub_purpose p {
     color: white;
     text-align: center;
@@ -410,19 +419,13 @@ section.our_purpose {
     font-family: var(--font-family-monteserat--);
     line-height: 24px;
 }
-
-
 /* ======================== about us   Page Style Ends ========================= */
-
-
 /* ======================== Register Page Style start ========================= */
-
 .bg_image {
     background-image: url(../image/main-bg.png), linear-gradient(180deg, #00273d, #02699c);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-   
 }
 
 .hub_beta h3 {
@@ -431,23 +434,20 @@ section.our_purpose {
     font-size: 30px;
     font-family: var(--font-family-monteserat--);
 }
-
 .hub_beta p {
     color: white;
     font-size: 16px;
     font-family: var(--font-family-monteserat--);
 }
-
-.jon_us p {
+.registerPage_content .hub_beta .jon_us p {
     color: #4fb5ef;
     font-size: 26px;
 }
-
 .jon_us small {
-    color: white;
+    font-size: 12px;
+    color: #e3e3e3;
     font-family: var(--font-family-monteserat--);
 }
-
 .register_input input {
     margin: 4px 0px;
     border-radius: 5px;
@@ -457,75 +457,74 @@ section.our_purpose {
     font-family: var(--font-family-monteserat--);
     width: 100%;
 }
-
 .register_input input::placeholder {
     font-family: var(--font-family-monteserat--);
     text-transform: capitalize;
     font-size: 12px;
 }
-
 .button_input {
     background-color: #f25a56;
     color: white;
     cursor: pointer;
 }
-
 .button_input::placeholder {
     color: white;
     text-align: center;
 }
-.bg_image_beta{
-         background-image: url(../image/main-bg.png), linear-gradient(180deg, #00273d, #02699c);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-
+.bg_image_beta {
+    background-image: url(../image/main-bg.png), linear-gradient(180deg, #00273d, #02699c);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /* ======================== Register  Page Style Ends ========================= */
-
-
 /* ======================== login  Page Style start ========================= */
+#loginPage .member_login {
+    min-height: 80vh;
+    padding-top: 40px;
+}
+.login_input .button_input:hover {
+    background: #02699c;
+}
 
 .member_login {
     background: #00283e;
 }
-
+.member_login .hub_community {
+    width: 40%;
+}
 .member_color h6 {
     font-family: var(--font-family-monteserat--);
     text-align: center;
     color: #4cb0e9;
-    font-size: 34px;
+    font-size: 28px;
 }
-
 .member_color p {
     color: white;
     text-align: center;
-    font-size: 18px;
+    font-size: 14px;
     font-family: var(--font-family-monteserat--);
 }
-
 .member_color {
     padding-top: 30px !important;
 }
-
 .login_input input {
     width: 50% !important;
     margin: 6px 0px;
 }
-
-article {
-    width: 100%;
+.member_login article {
+    width: 50%;
     padding: 10px 0;
     max-width: 337px;
     margin: 0 auto;
 }
-
+.forgot_password a:hover {
+    color: #fff !important;
+}
 .selectio_before {
     display: flex;
     align-items: center;
 }
-
 .selectio_before:before,
 .selectio_before:after {
     content: "";
@@ -533,15 +532,12 @@ article {
     height: 2px;
     background: #50B6F1;
 }
-
 .selectio_before:before {
     margin: 0 20px 0 0;
 }
-
 .selectio_before:after {
     margin: 0 0 0 20px;
 }
-
 .google_btn {
     width: 50% !important;
     margin: 6px 0px;
@@ -554,94 +550,119 @@ article {
     color: white;
     font-size: 14px;
 }
-
 .facebok_btn {
     background: #3b5799;
     color: white;
 }
-
 .google_btn img {
     max-width: 60% !important;
 }
-
-.facebok_btn i {
-    font-size: 20px;
+.member_login .facebok_btn i {
+    font-size: 16px;
 }
-
-
 /* ========================login  Page Style Ends ========================= */
-
 /* ========================classic software Page Style start ========================= */
-.software_info{
-    width: 31%;
+#classicSoftwarePage .bg_image,
+.member_login{
+    background-image: url(../image/main-bg.png), linear-gradient(180deg, #002e4a, #002e4a);
+    background-attachment: fixed;
+    /* background-size: 160% 200%;
+    background-position: top; */
+    background-size: 180% 170%;
+    background-position: 50% -30%;
+    background-repeat:repeat;
 }
-.classic_cards{
+.software_info {
+    width: 400px;
+    font-size: 16px;
+}
+.classic_cards {
     background: white;
     padding: 5px;
     border-radius: 12px;
-    height: 700px;
-   
+    height: 560px;
+    position: relative;
 }
-.classic_cards h5{
+.classic_cards .top_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.classic_cards h5 {
     font-family: var(--font-family-monteserat--);
     color: #006b9c;
+        font-weight: 600;
+    font-size: 1.2rem;
 }
-.classic_cards p{
+.classic_cards p {
     font-family: var(--font-family-monteserat--);
     color: #6e6e6e;
+    font-size: 12px;
 }
-.classic_cards small{
+.classic_cards small {
     font-family: var(--font-family-monteserat--);
     color: #6e6e6e;
-    font-size: 11px;
+    font-size: 9px;
+    display: block;
+    color: #aeaeae;
 }
-.learn_more{
+.cards_descp {
+    padding-top: 8px;
+}
+.learn_more {
     background: #006b9c;
     font-family: var(--font-family-monteserat--);
     color: white;
     border: none;
     border-radius: 5px;
     outline: none;
-    padding: 3px;
-    min-width: 100%;
+    padding: 6px;
+    /* min-width: 100%; */
+    font-size: 8px;
+    text-transform: uppercase;
+    box-shadow: 0px 2px 10px #6c6f73;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 82%;
+    margin: 0 auto;
+    right: 0;
 }
-.btn_one{
-    margin-top: 140px !important;
+.learn_more:hover {
+    color: #006b9c;
+    background: transparent;
+    box-shadow: 0px 2px 10px #caccce;
 }
-.btn_two{
-    margin-top: 92px;
-}
-.btn_three{
-    margin-top: 44px;
-}
-.btn_four{
-    margin-top: -4px;
-}
-.classic_bg{
+
+.classic_bg {
     height: 100% !important;
 }
 /* ========================classic software  Page Style Ends ========================= */
-
 /* ======================== home page style start ======================== */
-.hub_home img{
+.hub_home img {
     max-width: 32% !important;
 }
-.home_hero{
+.home_hero {
     height: 70vh;
     padding-top: 50px !important;
 }
-.home_purpose{
+.home_purpose {
     padding-top: 160px;
     padding-bottom: 100px;
 }
-.hub_home h5{
+.hub_home h5 {
     color: white;
     font-family: var(--font-family-monteserat--);
     font-size: 32px;
     line-height: 30px;
     /* font-weight: 400; */
 }
-.hub_home p{
+
+.home_hubb_icons .home_icons {
+    min-width: 120px;
+}
+.hub_home p {
     color: white;
     font-family: var(--font-family-monteserat--);
     font-weight: 400;
@@ -665,13 +686,46 @@ article {
     background: transparent;
     border: 1px solid #00b9f2;
 }
-.search {
+
+#searchForIdeaModal .modal-footer button {
+    color: white;
+    font-family: var(--font-family-monteserat--);
+    font-weight: 400;
+    font-size: 11px;
+    background-color: #00b9f2;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 20px;
+    height: 32px;
+    background-size: 200% !important;
+    transition: .6s ease-out;
+}
+#searchForIdeaModal .modal-footer button:hover{
+    background-position: left;
+    box-shadow: none;
+}
+#searchForIdeaModal .modal-footer .close_btn{
+    background: linear-gradient(to left, #f25a56 50%, #00b9f2 50%) right;
+}
+#searchForIdeaModal .modal-footer .sign_up{
+    background: linear-gradient(to left, #00b9f2 50%, #f25a56  50%) right;
+
+}
+#searchForIdeaModal .modal-header{    box-shadow: 0px 0px 8px #002e4a;
+    color: #fff;
+    background: #285b79;
+    height: 45px;
+    border: 0;}
+
+    #searchForIdeaModal  .btn-close {
+        filter: invert(1);
+    }
+    .search {
     width: 100%;
     display: flex;
     position: relative;
-  }
-  
-  .searchTerm {
+}
+.searchTerm {
     width: 100%;
     border: none;
     border-right: none;
@@ -682,27 +736,27 @@ article {
     outline: none;
     color: black;
     font-family: var(--font-family-monteserat--);
-  }
-  .searchTerm::placeholder{
-      font-family: var(--font-family-monteserat--);
-      font-size: 12px;
-      color: #02699C;
-      padding: 0px;
-  }
-  .search i{
+}
+.searchTerm::placeholder {
+    font-family: var(--font-family-monteserat--);
+    font-size: 12px;
+    color: #02699C;
+    padding: 0px;
+}
+.search i {
     position: absolute;
     top: 13px;
     left: 14px;
     font-size: 19px;
     font-weight: 500;
-  }
-  .wrap p{
-      color: white;
-      font-family: var(--font-family-monteserat--);
-      font-size: 18px;
-      font-weight: 400;
-  }
-  .searchButton {
+}
+.wrap p {
+    color: white;
+    font-family: var(--font-family-monteserat--);
+    font-size: 18px;
+    font-weight: 400;
+}
+.searchButton {
     width: 20%;
     height: 50px;
     background: #F25A56;
@@ -714,57 +768,55 @@ article {
     font-family: var(--font-family-monteserat--);
     font-size: 12px;
     font-weight: 600;
-  }
-  button.searchButton:hover {
+}
+button.searchButton:hover {
     background: #ffffff;
-    border: 1px solid #32637c;
     color: #F25A56;
 }
-  
-  .home_hero .wrap{
+.home_hero .wrap {
     width: 55%;
-  }
-  .home_icons img{
-      max-width: 30%  !important;
-  }
-  .home_icons span{
-      color: white;
-      font-family: var(--font-family-monteserat--);
-      margin-left: 10px;
-      font-size: 12px;
-  }
-  .forex{
+}
+.home_icons img {
+    max-width: 30% !important;
+}
+.home_icons span {
     color: white;
     font-family: var(--font-family-monteserat--);
     margin-left: 10px;
     font-size: 12px;
-  }
-  .home_hubb_icons{
-      width: 45%;
-  }
-  .home_purpose p{
+}
+.forex {
+    color: white;
+    font-family: var(--font-family-monteserat--);
+    margin-left: 10px;
+    font-size: 12px;
+}
+.home_hubb_icons {
+    width: 300px;
+}
+.home_purpose p {
     color: white;
     font-family: var(--font-family-monteserat--);
     width: 45%;
     text-align: center;
     font-size: 17px;
-  }
-  .home_welcome_detail{
-      background: #00283d;
-      border-radius: 10px;
-      width: 40%;
-      height: 500px;
-      position: relative;
-  }
-  .home_welcome_detail small{
-      color: #cfcece;
-      font-family: var(--font-family-monteserat--);
-      font-size: 11px;
+}
+.home_welcome_detail {
+    background: #00283d;
+    border-radius: 10px;
+    width: 40%;
+    height: 500px;
+    position: relative;
+}
+.home_welcome_detail small {
+    color: #cfcece;
+    font-family: var(--font-family-monteserat--);
+    font-size: 11px;
     display: block;
     padding-right: 20px;
     line-height: 1.5;
-  }
-  .home_welcome_detail h6{
+}
+.home_welcome_detail h6 {
     color: #4eb3ee;
     font-family: var(--font-family-monteserat--);
     font-size: 24px;
@@ -775,24 +827,24 @@ article {
     background: transparent;
     border: 1px solid #00b9f2;
 }
-.home_welcome_detail button{
+.home_welcome_detail button {
     margin-top: 50px !important;
     width: 100%;
     height: 32px !important;
 }
-.home_welcome_detail .mobile_learn{
+.home_welcome_detail .mobile_learn {
     position: absolute;
     width: 83%;
     bottom: 40px;
 }
-.learn_more_btn button{
+.learn_more_btn button {
     margin-top: 140px !important;
 }
 .plateform img {
     min-height: 30px;
     width: 90px;
 }
-.plateform p{
+.plateform p {
     font-size: 10px;
     color: #009fd3;
     width: 100% !important;
@@ -805,28 +857,45 @@ article {
     background-repeat: no-repeat;
 } */
 .bg_image_home {
-    background-image:url(../image/home-bg.svg),  radial-gradient(farthest-corner at 40px 100px, #00273e 0%,#015b88 40%, #022334 100%);
+    background-image: url(../image/home-bg.svg), radial-gradient(farthest-corner at 40px 100px, #00273e 0%, #015b88 40%, #022334 100%);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 160% 100%;
+    background-size: 160% 200%;
 }
-  /* ======================== home page style start ======================== */
+#registerPage .bg_image_home {
+    background-image: url(../image/home-bg.svg), radial-gradient(farthest-corner at 40px 100px, #002e4a 0%, #002e4a 40%, #002e4a 100%);
+    background-position: 50% 30%;
+    background-repeat: repeat;
+    padding-bottom: 160px ;
+    min-height: 80vh;
+}
+.registerPage_content{
+    width: 80%;
+    margin: 0 auto;;
+}
+.registerPage_content .hub_beta h3 {
+    font-size: 36px;
+}
+.registerPage_content .hub_beta p {
+    font-size: 12px;
+    color: #e3e3e3 !important;
+}
+/* ======================== home page style start ======================== */
 /* ========================== footer__page styale starts ====================== */
 .footer {
     background-color: #00273D;
     min-height: 200px;
 }
- .footer_logo img{
+.footer_logo img {
     width: 110px;
 }
-
 .footer_detail {
     color: #BCC1CB;
     font-family: var(--font-family-monteserat--);
     font-size: 12px;
 }
-
-.footer_detail ul li {
+.footer_detail ul li a,
+.footer_detail ul li{
     color: #BCC1CB;
     font-family: var(--font-family-monteserat--);
     list-style: none;
@@ -834,12 +903,11 @@ article {
     cursor: pointer;
     line-height: 1.7;
     transition: 0.4s;
+    text-decoration: none;
 }
-
-.footer_detail ul li:hover {
+.footer_detail ul li a:hover {
     color: #fff;
 }
-
 .footer_detail button {
     /* background-color: ; */
     border: none;
@@ -857,21 +925,15 @@ article {
     transition: .6s ease-out;
     box-shadow: 10px 10px 40px #0D0E0F;
 }
-
 .footer_detail button:hover {
     background-position: left;
 }
-
 /* ========================== footer__page styale ends ====================== */
-
-
-
 /* // Large devices (desktops, 992px and up) */
 @media (max-width: 1199.98px) {}
-
 /* // Medium devices (tablets, 768px and up) */
 @media (max-width: 991.98px) {
-    .sticky_header.top_header{
+    .sticky_header.top_header {
         display: none;
     }
     .sticky_header.bottom_header {
@@ -886,7 +948,7 @@ article {
         background-color: #002b45;
         border: 1px solid #50b6f1;
     }
-    .sticky_header.bottom_header .navbar-toggler:focus{
+    .sticky_header.bottom_header .navbar-toggler:focus {
         box-shadow: none;
     }
     .sticky_header.bottom_header .navbar-toggler .navbar-toggler-icon {
@@ -894,50 +956,46 @@ article {
         height: 1.5em;
         background: #50b6f1;
     }
-    .sticky_header.bottom_header .navbar-nav{
+    .sticky_header.bottom_header .navbar-nav {
         padding-top: 12px;
     }
     .sticky_header.bottom_header .navbar-expand-lg .navbar-nav .nav-link {
         margin-left: 0;
         padding: 10px 0;
     }
-    .sticky_header.bottom_header .navbar .navbar-collapse form{
-    padding-bottom: 20px;
+    .sticky_header.bottom_header .navbar .navbar-collapse form {
+        padding-bottom: 20px;
     }
 }
-
 /* // span devices (landscape phones, 576px and up) */
 @media (max-width: 767.98px) {}
-
 /* // Extra span devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-
     /* home page responsiveness start */
-    
-    .mobile_access{
+    .mobile_access {
         display: none;
     }
     .home_hero {
         height: 100%;
         padding-top: 50px !important;
     }
-    .wrap{
+    .wrap {
         width: 100%;
-      }
-      .mobile_access_width{
-          text-align: center;
-          margin-top: 50px;
-      }
-      .searchTerm {
-          height: 60px;
-      }
-      .searchButton{
+    }
+    .mobile_access_width {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .searchTerm {
         height: 60px;
-      }
-      .search i{
+    }
+    .searchButton {
+        height: 60px;
+    }
+    .search i {
         top: 19px;
-      }
-      .wrap p {
+    }
+    .wrap p {
         font-size: 16px;
     }
     .home_hubb_icons {
@@ -1022,198 +1080,195 @@ article {
     .footer_logo {
         margin-left: 13px
     }
- .classic_software{
-    width: 39%;
-    padding: 0 30px;
- }
- .software_info {
-    width: 100%;
-    text-align: initial !important;
-    padding: 0 30px;
-    font-size: 15px;
-}
-.classic_cards {
-    height: 675px;
-    margin: 10px 0px;
-}
-.btn_three {
-    margin-top: 75px;
-}
-.btn_two {
-    margin-top: 106px;
-}
-.member_color {
-    padding-top: 100px !important;
-}
-.hub_community {
-    width: 100%;
-}
-.login_input input {
-    width: 80% !important;
-    margin: 6px 0px;
-    height: 45px;
-}
-article {
-    width: 80%;
-}
-.google_btn img {
-    max-width: 40% !important;
-}
-.google_btn{
-    width: 80% !important;
-    font-size: 12px;
-}
-.continue_google_btn{
-    width: 60%;
-}
-.google_body{
-    width: 29%;
-}
-.facebook_icons{
-    width: 20%;
-}
-.continue_facebook{
-    width: 80%;
-}
-
-.hub_community h3 {
-    font-size: 30px;
-    text-align: initial;
-    margin: -10px 0px;
-}
-
-.hub_plateform {
-    text-align: initial !important;
-    font-size: 15px;
-}
-.mobile_about{
-    margin-top: 30px;
-}
-.team_card {
-    margin: 20px 0px;
-}
-.hub_mobile{
-    max-width: 40% !important;
-}
-.our_Beliefs {
-    padding: 3px 10px;
-    height: 100%;
-}
-.belief_sub_heading h5 {
-    font-size: 19px;
-}
-.hub_purpose p {
-    width: 80%;
-    font-size: 15px;
-    text-align: inherit;
-}
-.hub_purpose h3{
-    padding: 0 36px;
-    width: 70%;
-}
-.hub_seprate_image_lens{
-    display: none;
-}
-.hub_seprate_image{
-    display: none;
-}
-.mobile_paddings{
-    padding-top: 120px;
-}
-.hub_community_detail {
-    width: 100%;
-}
-.hub_seprate_image_girl {
-    display: none;
-}
-.trusted_image{
-    text-align: initial !important;
-}
-.idea_invest{
-    text-align: initial !important;
-}
-.investment_idea {
-    font-size: 16px;
-}
-.hub_para {
-    width: 100%;
-    text-align: initial !important;
-}
-.trust_rank_descp {
-    text-align: initial !important;
-}
-.hub_cards {
-    border-radius: 0px;
-    width: 100%;
-
-}
-.hub_cards_user img{
-    padding: 10px 0px;
-}
-.hub_cards {
-    background-image: linear-gradient(45deg, #2893cdc7, transparent);
-}
-.hub_plateform_mobile{
-    width: 70%;
-    padding-top: 30px;
-    font-size: 27px;
-}
-.plateform_feature {
-    padding: 20px;
-}
-.d-sm-none{
-    display: none;
-}
-.graph_image img {
-    margin-top: 12px;
-}
-.mobille_width{
-    width: 100%;
-}
-.graph_text {
-    width: 100%;
-    text-align: initial !important;
-}
-.hub_mobile_padding{
-    padding: 5px 20px;
-    margin-top: 30px;
-}
-.investment_access button {
-    width: 80% !important;
-}
-.market_coverage button {
-    width: 80% !important;
-}
-.bg_image_beta{
-    background-image:  linear-gradient(180deg, #00273d, #02699c);
+    .classic_software {
+        width: 39%;
+        padding: 0 30px;
+    }
+    .software_info {
+        width: 100%;
+        text-align: initial !important;
+        padding: 0 30px;
+        font-size: 15px;
+    }
+    .classic_cards {
+        height: 675px;
+        margin: 10px 0px;
+    }
+    .btn_three {
+        margin-top: 75px;
+    }
+    .btn_two {
+        margin-top: 106px;
+    }
+    .member_color {
+        padding-top: 100px !important;
+    }
+    .hub_community {
+        width: 100%;
+    }
+    .login_input input {
+        width: 80% !important;
+        margin: 6px 0px;
+        height: 45px;
+    }
+    article {
+        width: 80%;
+    }
+    .google_btn img {
+        max-width: 40% !important;
+    }
+    .google_btn {
+        width: 80% !important;
+        font-size: 12px;
+    }
+    .continue_google_btn {
+        width: 60%;
+    }
+    .google_body {
+        width: 29%;
+    }
+    .facebook_icons {
+        width: 20%;
+    }
+    .continue_facebook {
+        width: 80%;
+    }
+    .hub_community h3 {
+        font-size: 30px;
+        text-align: initial;
+        margin: -10px 0px;
+    }
+    .hub_plateform {
+        text-align: initial !important;
+        font-size: 15px;
+    }
+    .mobile_about {
+        margin-top: 30px;
+    }
+    .team_card {
+        margin: 20px 0px;
+    }
+    .hub_mobile {
+        max-width: 40% !important;
+    }
+    .our_Beliefs {
+        padding: 3px 10px;
+        height: 100%;
+    }
+    .belief_sub_heading h5 {
+        font-size: 19px;
+    }
+    .hub_purpose p {
+        width: 80%;
+        font-size: 15px;
+        text-align: inherit;
+    }
+    .hub_purpose h3 {
+        padding: 0 36px;
+        width: 70%;
+    }
+    .hub_seprate_image_lens {
+        display: none;
+    }
+    .hub_seprate_image {
+        display: none;
+    }
+    .mobile_paddings {
+        padding-top: 120px;
+    }
+    .hub_community_detail {
+        width: 100%;
+    }
+    .hub_seprate_image_girl {
+        display: none;
+    }
+    .trusted_image {
+        text-align: initial !important;
+    }
+    .idea_invest {
+        text-align: initial !important;
+    }
+    .investment_idea {
+        font-size: 16px;
+    }
+    .hub_para {
+        width: 100%;
+        text-align: initial !important;
+    }
+    .trust_rank_descp {
+        text-align: initial !important;
+    }
+    .hub_cards {
+        border-radius: 0px;
+        width: 100%;
+    }
+    .hub_cards_user img {
+        padding: 10px 0px;
+    }
+    .hub_cards {
+        background-image: linear-gradient(45deg, #2893cdc7, transparent);
+    }
+    .hub_plateform_mobile {
+        width: 70%;
+        padding-top: 30px;
+        font-size: 27px;
+    }
+    .plateform_feature {
+        padding: 20px;
+    }
+    .d-sm-none {
+        display: none;
+    }
+    .graph_image img {
+        margin-top: 12px;
+    }
+    .mobille_width {
+        width: 100%;
+    }
+    .graph_text {
+        width: 100%;
+        text-align: initial !important;
+    }
+    .hub_mobile_padding {
+        padding: 5px 20px;
+        margin-top: 30px;
+    }
+    .investment_access button {
+        width: 80% !important;
+    }
+    .market_coverage button {
+        width: 80% !important;
+    }
+    .bg_image_beta {
+        background-image: linear-gradient(180deg, #00273d, #02699c);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-}
-.mobile_graph_image{
-    display: none;
-}
-.hub_beta p {
-    font-size: 13px;
-    margin-top: 30px;
-}
-.jon_us p {
-    font-size: 30px !important;
-    margin-top: 40px !important;
-}
-.jon_us{
-    text-align: center;
-    margin-top: 150px;
-}
-.register_input{
-    margin-top: 20px;
-    text-align: center;
-}
-.register_input input {
-    width: 80%;
-}
-.mobile_d_none{
-    display:none !important;
-}
+    }
+    .mobile_graph_image {
+        display: none;
+    }
+    .hub_beta p {
+        font-size: 13px;
+        margin-top: 30px;
+    }
+    .jon_us p {
+        font-size: 30px !important;
+        margin-top: 40px !important;
+    }
+    .jon_us {
+        text-align: center;
+        margin-top: 150px;
+    }
+    .register_input {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .register_input input {
+        width: 80%;
+    }
+    .mobile_d_none {
+        display: none !important;
+    }
 }
 /* ============================= Responsiveness Ends ========================== */
