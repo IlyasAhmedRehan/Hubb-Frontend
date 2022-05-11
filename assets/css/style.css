@@ -138,6 +138,13 @@ button.sign_up:hover {
 /* Bottom Header  */
 /* ========================header page style end ========================*/
 /* ======================== community Page Style Starts ========================= */
+
+#communityPage section.hero_section {
+    background-image: url(../image/home-bg.svg), linear-gradient(180deg, rgb(0 46 74) 29%, rgb(19 95 135) 51%, rgb(55 114 151) 96%);
+    background-size: 160% 200%;
+    background-attachment: fixed;
+    background-position: 50% 20%;
+}
 .hero_section {
     background-image: linear-gradient(180deg, #002e49, #016596);
     padding-bottom: 50px;
@@ -208,6 +215,9 @@ button.sign_up:hover {
     background-repeat: no-repeat;
     background-size: 160% 200%;
 }
+#home_page .plat_form_feature {
+    background-image: linear-gradient(224deg, #00273d, #01699D);
+}
 .plat_form_feature_content {
     width: 50%;
     margin: 0 auto;
@@ -217,6 +227,9 @@ button.sign_up:hover {
     margin: 0 auto;
     padding-top: 120px;
     padding-bottom: 100px;
+}
+#communityPage .plateform_feature .hubb_investment .investment_hub{
+    padding-bottom: 200px;  
 }
 .hub_trust_rank .investment_hub,
 .hub_trust_rank .trust_rank_descp {
@@ -329,12 +342,22 @@ button.sign_up:hover {
     height: 170px;
     background-color: #bcc1cb;
 }
-#about_us_page .plateform_feature,
+
 #communityPage .plateform_feature {
-    background-image: url(../image/home-bg.svg), linear-gradient(180deg, rgb(0 46 74) 29%, rgb(8 101 149) 51%, rgba(0, 46, 74, 1) 96%);
+    background-image: url(../image/home-bg.svg), linear-gradient(180deg, rgb(6 38 58) 29%, rgb(10 78 112) 51%, rgba(0, 46, 74, 1) 96%);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 160% 200%;
+}
+#about_us_page{
+    background-image: url(../image/home-bg.svg), linear-gradient(180deg, rgb(0 46 74) 29%, rgb(8 101 149) 51%, rgba(0, 46, 74, 1) 96%);
+    background-repeat: no-repeat;
+    background-size: 160% 200%;
+    background-attachment: fixed;
+    background-position: top; 
+}
+#communityPage .plateform_feature {
+    background-position: 50% 55%;
 }
 #about_us_page .hub_community_detail P {
     font-size: 12px;
@@ -366,7 +389,11 @@ button.sign_up:hover {
     font-size: 11px;
 }
 .our_Beliefs {
-    background-image: linear-gradient(180deg, #022234, #02699c);
+    background-image: url(../image/home-bg.svg), linear-gradient(180deg, rgb(0 46 74) 29%, rgb(8 101 149) 51%, rgba(0, 46, 74, 1) 96%);
+    background-repeat: no-repeat;
+    background-size: 160% 200%;
+    background-attachment: fixed;
+    background-position: top;
     height: 100vh;
     padding-top: 140px;
 }
@@ -392,8 +419,18 @@ button.sign_up:hover {
     word-break: break-word;
 }
 section.our_purpose {
-    background-image: linear-gradient(180deg, #00273d, #02699c);
+    background-image: url(../image/home-bg.svg), linear-gradient(180deg, rgb(17 57 81) 29%, rgb(6 73 109) 51%, rgba(0, 46, 74, 1) 96%);
+    background-repeat: no-repeat;
+    background-size: 160% 200%;
+    background-attachment: fixed;
+    background-position: top;
     height: 100vh;
+}
+section.our_purpose.our_manifesto {
+    background-image: url(../image/home-bg.svg), linear-gradient(180deg, rgb(11 48 70) 29%, rgb(21 90 127) 51%, rgba(0, 46, 74, 1) 96%);
+}
+section.our_purpose.we_are_community{
+    background-image: url(../image/home-bg.svg), linear-gradient(180deg, rgb(10 35 48) 29%, rgb(39 108 145) 51%, rgba(0, 46, 74, 1) 96%);
 }
 .our_purpose .mian_purpose p {
     font-size: 16px;
@@ -427,6 +464,23 @@ section.our_purpose {
     background-repeat: no-repeat;
     background-size: cover;
 }
+#registerPage .graph_image.mobile_graph_image,
+#registerPage .graph_image.mobile_graph_image img{
+    height:100%;
+}
+#registerPage .register_input{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.register_input input.button_input {
+    margin-bottom: 0;
+}
+#registerPage .plateform_feature .registerPage_content .row{
+    align-items: end;
+}
 
 .hub_beta h3 {
     text-align: inherit !important;
@@ -444,16 +498,17 @@ section.our_purpose {
     font-size: 26px;
 }
 .jon_us small {
-    font-size: 12px;
+    font-size: 11px;
     color: #e3e3e3;
     font-family: var(--font-family-monteserat--);
+    display: inline-block;
 }
 .register_input input {
     margin: 4px 0px;
     border-radius: 5px;
     outline: none;
     border: none;
-    padding: 5px 5px;
+    padding: 5px 10px;
     font-family: var(--font-family-monteserat--);
     width: 100%;
 }
@@ -649,24 +704,25 @@ section.our_purpose {
 }
 .home_purpose {
     padding-top: 160px;
-    padding-bottom: 100px;
+    padding-bottom: 260px;
 }
 .hub_home h5 {
     color: white;
     font-family: var(--font-family-monteserat--);
-    font-size: 32px;
+    font-size: 36px;
     line-height: 30px;
     /* font-weight: 400; */
 }
 
 .home_hubb_icons .home_icons {
     min-width: 120px;
+    min-height: 40px;
 }
 .hub_home p {
     color: white;
     font-family: var(--font-family-monteserat--);
     font-weight: 400;
-    /* font-size: 15px; */
+    font-size: 17px;
     line-height: 19px;
 }
 .hub_home button {
@@ -753,7 +809,7 @@ section.our_purpose {
 .wrap p {
     color: white;
     font-family: var(--font-family-monteserat--);
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
 }
 .searchButton {
@@ -782,8 +838,8 @@ button.searchButton:hover {
 .home_icons span {
     color: white;
     font-family: var(--font-family-monteserat--);
-    margin-left: 10px;
-    font-size: 12px;
+    margin-left: 20px;
+    font-size: 14px;
 }
 .forex {
     color: white;
@@ -837,15 +893,18 @@ button.searchButton:hover {
     width: 83%;
     bottom: 40px;
 }
+.home_welcome_detail .mobile_learn a {
+    color: #fff;
+}
 .learn_more_btn button {
     margin-top: 140px !important;
 }
 .plateform img {
-    min-height: 30px;
+    min-height: 40px;
     width: 90px;
 }
 .plateform p {
-    font-size: 10px;
+    font-size: 12px;
     color: #009fd3;
     width: 100% !important;
     line-height: 15px;
@@ -1027,7 +1086,9 @@ button.searchButton:hover {
         padding-top: 0 !important;
     }
     .hub_home img {
-        max-width: 50% !important;
+        /* max-width: 50% !important; */
+        max-width: 45px !important;
+        min-height: 60px;
     }
     #home_page .home_hero .mobile_hub_home p{
         display: none;
@@ -1078,6 +1139,7 @@ button.searchButton:hover {
         font-size: 10px;
         width: 60%;
         height: 36px;
+        margin-top: 50px !important;
     }
    .bg_image_home .home_purpose {
         padding-top: 40px;
@@ -1316,7 +1378,8 @@ button.searchButton:hover {
     }
     .hub_mobile_padding {
         padding: 5px 20px;
-        margin-top: 30px;
+        margin-top: 0;
+        padding-top: 40px;
     }
     .investment_access button {
         width: 80% !important;
@@ -1381,8 +1444,8 @@ button.searchButton:hover {
     .our-team {
         padding-top: 60px;
         padding-bottom: 30px;
-        background-image: url(../image/home-bg.svg), linear-gradient(180deg, rgb(0 46 74) 29%, rgb(8 101 149) 51%, rgba(0, 46, 74, 1) 96%);
-        background-size: 140% 100%;
+        background-image: url(../image/main-bg.png), linear-gradient(180deg, rgb(0 46 74) 29%, rgb(8 101 149) 51%, rgba(0, 46, 74, 1) 96%);
+        background-size: 130% 20%;
         background-repeat: no-repeat;
         background-position: center;
         margin-top: 60px;
@@ -1397,9 +1460,16 @@ button.searchButton:hover {
     }
     #about_us_page .plateform_feature{
         padding: 20px 0 0;
+        background-image: url(../image/home-bg.svg), linear-gradient(180deg, rgb(0 46 74) 29%, rgb(0 46 74) 51%, rgb(24 115 171) 96%);
+        background-repeat: no-repeat;
+        background-size: 200% 200%;
+        background-position: 90% 85%;
     }
     #about_us_page .plateform_feature .hub_community {
         padding: 0 20px;
+    }
+    #about_us_page .hub_community_detail .mobile_mh_60vh {
+        min-height: 50vh;
     }
     .team_card {
         min-height: 260px;
@@ -1451,7 +1521,8 @@ button.searchButton:hover {
     }
 
     #classicSoftwarePage .bg_image{
-        background-size: 220% 100%;
+        background-size: 220% 90%;
+        background-image: url(../image/home-bg.svg), linear-gradient(180deg, #002e4a, #002e4a);
     }
     .software_info {
         padding-right:15px;
@@ -1459,12 +1530,17 @@ button.searchButton:hover {
     }
     .classic_cards {
         height: auto;
-        margin: 10px 0px;
+        margin: 15px 10px;
         padding-bottom: 60px !important;
     }
     .classic_cards .image_div{
         text-align: center;
     }
+    .classic_cards .image_div img{
+        min-width: 160px;
+        margin: 0 auto;
+    }
+
     .footer_content.mt-5 .col-md-2.mt-5.ps-0 {
         margin-top: 20px !important;
     }
@@ -1483,6 +1559,22 @@ button.searchButton:hover {
         background-size: 160% 200%;
         background-attachment: fixed;
         background-position: 50% 20%;
+    }
+    #communityPage .plateform_feature{
+       padding: 0;
+    }
+    #communityPage .plateform_feature .hubb_investment,
+    #communityPage .plateform_feature .hub_trust_rank{
+        padding: 20px;
+    }
+    #communityPage .plateform_feature .hub_trust_rank{
+        background-image: url(../image/home-bg.svg), linear-gradient(180deg, rgb(14 69 104) 29%, rgb(12 55 74) 51%, rgba(0, 46, 74, 1) 96%);
+    background-size: 160% 200%;
+    background-attachment: fixed;
+    background-position: 50% 20%;
+    }
+    #communityPage section.hero_section {
+        min-height: 80vh;
     }
     .hub_trust_rank .investment_hub {
         padding-top: 20px;
@@ -1510,6 +1602,73 @@ button.searchButton:hover {
         background-attachment: fixed;
         background-position: 50% 111%;
     }
-    
+
+    #home_page .hero_section.home_hero  {
+           background-image: url(../image/home-bg.svg), linear-gradient(180deg, rgb(0 46 74) 29%, rgb(8 101 149) 51%, rgba(0, 46, 74, 1) 96%);
+    background-size: 140% 200%;
+    background-attachment: fixed;
+    background-position: 50% 20%;
+}
+.home_hubb_icons .home_icons:nth-child(2) {
+    order: 2;
+} 
+.home_hubb_icons .home_icons:nth-child(4) {
+    order: 3;
+}
+.home_hubb_icons .home_icons:nth-child(2) img {
+    margin-left: -10px;
+}
+.home_hubb_icons .home_icons:nth-child(1) img {
+    margin-left: 0;
+}
+#home_page .bg_image_home {
+    background-attachment: fixed;
+    background-position: 50% 20%;
+}
+div#platformFeature_Page .plateform_feature {
+    padding-left: 0;
+    padding-right: 0;
+}
+div#platformFeature_Page .plateform_feature .hub_community {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: url(../image/home-bg.svg), linear-gradient(180deg, rgb(0 46 74) 29%, rgb(19 95 135) 51%, rgb(55 114 151) 96%);
+    background-size: 160% 200%;
+    background-attachment: fixed;
+    background-position: 50% 20%;
+}
+div#platformFeature_Page .plateform_feature .hub_community.trusted_height{
+    background-image: url(../image/home-bg.svg), linear-gradient(180deg, rgb(6 38 58) 29%, rgb(10 78 112) 51%, rgba(0, 46, 74, 1) 96%);
+}
+div#platformFeature_Page .thousand_of_market .investment_access{
+    background-image: url(../image/home-bg.svg), linear-gradient(180deg, rgb(6 38 58) 29%, rgb(10 78 112) 51%, rgba(0, 46, 74, 1) 96%);
+    background-size: 160% 200%;
+    background-attachment: fixed;
+    background-position: 50% 20%;
+}
+
+div#platformFeature_Page .thousand_of_market .hub_community.hub_mobile_padding{
+    background-image: url(../image/home-bg.svg), linear-gradient(180deg, rgb(14 93 143) 29%, rgb(10 78 112) 51%, rgba(0, 46, 74, 1) 96%);
+    background-size: 160% 200%;
+    background-attachment: fixed;
+    background-position: 50% 20%;
+}
+div#platformFeature_Page .thousand_of_market .hub_community.hub_mobile_padding:nth-child(odd) {
+    background-image: url(../image/home-bg.svg), linear-gradient(180deg, rgb(7 43 66) 29%, rgb(10 78 112) 51%, rgba(0, 46, 74, 1) 96%);
+    background-size: 160% 200%;
+}
+#classicSoftwarePage .plateform_feature .hub_community .container .row.mt-4 {
+    margin-top: 80px !important;
+}
+.classic_cards h5 {
+    font-size: 1.4rem;
+}
+.classic_cards small {
+    font-size: 12px;
+}
+.classic_cards p {
+    font-size: 14px;
+}
+
 }
 /* ============================= Responsiveness Ends ========================== */
